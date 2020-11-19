@@ -16,7 +16,7 @@ app.use(morgan('dev'));
 mongoose.connect('mongodb+srv://sebas:sebas@cluster0.wh1fi.mongodb.net/veterinaria?retryWrites=true&w=majority')
 .then(db=>{console.log('db connected')})
 .catch(err=>{console.log(err)})
-
+//pruebas
 // routes
 var indexRoute=require('./routes/index');
 const { db } = require('./models/hueso');
