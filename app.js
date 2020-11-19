@@ -19,6 +19,7 @@ mongoose.connect('mongodb+srv://sebas:sebas@cluster0.wh1fi.mongodb.net/veterinar
 
 // routes
 var indexRoute=require('./routes/index');
+const { db } = require('./models/hueso');
 app.use('/',indexRoute);
 app.listen(app.get('port'),()=>{
     console.log('server on port 3000')
