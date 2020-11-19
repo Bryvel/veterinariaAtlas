@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Atlas Osteologia</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="metodosCarga.js"></script>
+  <script src="jquery.js"></script>
+  
+  <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3452fc;">
+    <div class="container-fluid">
+      
+        <a class="navbar-brand" href="/">
+          <img src="/ico/perro front.jpg" width="60" height="60" class="d-inline-block align-top" alt="">
+          Bibliotecas Interactivas UCE
+
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarNav" aling="right">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                
+              <li class="nav-item">
+                <a class="nav-link" href="/">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Generalidades">Generalidades</a>
+              </li>
+             
+            </ul>
+          
+
+
+      </div>
+      
+    </div>
+  </nav>
+
+ 
+   
+ 
+    <div class="row">
+      
+      <div class="col-xl-4">
+        <h1>
+          <center><%=huesos[0].nombre%></center>
+        </h1>
+        <div id="listaDetalle">
+
+        </div>
+      </div>
+      
+      
+      <div class="col-xl-8" id="imageContainer">
+      
+      <button type="button" class="btn btn-light" id="tipo">VISTA MODO ATLAS</button>
+      <button type="button" class="btn btn-light" id="radiografia">VISTA MODO RX</button>
+      
+         
+      <div class="embed-responsive embed-responsive-1by1">
+      <iframe class="embed-responsive-item" src=" " id="contenedor" style="border:none" class="contenedor"></iframe>
+
+      </div>
+    </div>
+
+            
+
+    </div>
+ 
+    
+ 
+
+    <footer  style="background-color: #3452fc;">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4 text-center text-md-left ">
+                    
+                    <div class="py-0">
+                        <p class="footer-links font-weight-bold">
+                        <h3><center><img src="/ico/icon 2.png" width="100" height="100" id="uce"></center></h3>
+                        <h3><center>Universidad Central del Ecuador</center></h3>
+                            
+                          
+                        </p>
+                        <p class="text-light py-4 mb-4">&copy;2019 bryvel-productions</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 text-white text-center text-md-left ">
+                    <div class="py-2 my-4">
+                        <div>
+                           
+                            <a><center><img src="/ico/icon 5.png" width="100" height="100" id="uce"></center></a>
+                            <p> </p>
+                            <a><center><img src="/ico/ico 6.jpg" width="100" height="100" id="uce"></center></a>
+
+                        </div>  
+                    </div>  
+                </div>
+                
+                <div class="col-md-4 text-white my-4 text-center text-md-left ">
+                    <span class=" font-weight-bold ">Autores:</span>
+                    <center><p>Facultad de Ingeniería Ciencias Físicas y Matemáticas</p></center> 
+                      <ul>
+                        <li>Bryan Sebastian Velasco Lopez</li>
+                        <li>Ing. César Morales Mejía</li>
+                      </ul>
+                      <center><p>Facultad Medicina Veterinaria y Zootecnía</p></center> 
+                      <ul>
+                        <li>Verónica Estefani Alvear Sandoval</li>
+                        <li>María del Carmen Revelo Cueva</li>
+                      </ul>
+                     
+                     
+                  
+
+                </div>
+            </div>  
+        </div>
+     </footer>
+
+
+</body>
+
+<style type="text/css">
+  body {
+    background-color: black;
+  }
+
+  .list-group {
+
+    background-color: gray;
+  }
+
+  .responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #tipo{
+     margin: 1em;
+    
+   background-repeat: no-repeat;
+   background-position: center;
+   
+  }
+
+  
+  h1 {
+    color: white;
+    margin: 1em;
+  }
+
+
+
+  #page-content {
+    flex: 1 0 auto;
+  }
+
+  #sticky-footer {
+    flex-shrink: none;
+  }
+
+  
+
+#uce a img {
+    display : block;
+    margin : auto;
+}
+
+
+
+
+</style>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script >
+
+var listaPartes = <%- JSON.stringify( huesos[0].partes ); %>;
+var nombre=<%- JSON.stringify( huesos[0].nombre ); %>;
+console.log(listaPartes)
+CargarLista();
+clickLoop(nombre, listaPartes);
+cargarAtlas();
+cargarXray();
+
+</script>
+
+</html>
