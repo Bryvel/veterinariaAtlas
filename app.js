@@ -13,7 +13,7 @@ app.use( express.static(__dirname + '/Public'));
 //Use middleware
 app.use(morgan('dev'));
 //DB connection
-mongoose.connect('mongodb://localhost/veterinaria')
+mongoose.connect('mongodb+srv://sebas:sebas@cluster0.wh1fi.mongodb.net/veterinaria?retryWrites=true&w=majority')
 .then(db=>{console.log('db connected')})
 .catch(err=>{console.log(err)})
 
