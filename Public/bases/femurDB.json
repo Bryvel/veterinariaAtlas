@@ -1,0 +1,284 @@
+[
+  {
+    "nombre": "femurIzquierdoVistaCraneal",
+    "points": [
+      {
+        "posX": "600",
+        "posY": "350",
+        "nombre": "Cabeza de fémur"
+      },
+      {
+        "posX": "1790",
+        "posY": "435",
+        "nombre": "Trocánter Mayor"
+      },
+      {
+        "posX": "360",
+        "posY": "870",
+        "nombre": "Cuello del fémur"
+      },
+      {
+        "posX": "529",
+        "posY": "1230",
+        "nombre": "Trocánter menor"
+      },
+      {
+        "posX": "1500",
+        "posY": "2415",
+        "nombre": "Cuerpo del fémur"
+      },
+      {
+        "posX": "1050",
+        "posY": "4340",
+        "nombre": "Tróclea del fémur"
+      },
+      {
+        "posX": "340",
+        "posY": "4300",
+        "nombre": "Epicóndilo medial"
+      },
+      {
+        "posX": "1750",
+        "posY": "4310",
+        "nombre": "Epicóndilo lateral"
+      }
+    ],
+    "animal": "canino",
+    "RX": true
+  },
+  {
+    "nombre": "femurIzquierdoVistaLateral",
+    "points": [
+      {
+        "posX": "600",
+        "posY": "350",
+        "nombre": "Cabeza de fémur"
+      },
+      {
+        "posX": "1790",
+        "posY": "435",
+        "nombre": "Trocánter Mayor"
+      },
+      {
+        "posX": "360",
+        "posY": "870",
+        "nombre": "Cuello del fémur"
+      },
+      {
+        "posX": "529",
+        "posY": "1230",
+        "nombre": "Trocánter menor"
+      },
+      {
+        "posX": "1500",
+        "posY": "2415",
+        "nombre": "Cuerpo del fémur"
+      },
+      {
+        "posX": "1050",
+        "posY": "4340",
+        "nombre": "Tróclea del fémur"
+      },
+      {
+        "posX": "340",
+        "posY": "4300",
+        "nombre": "Epicóndilo medial"
+      },
+      {
+        "posX": "1750",
+        "posY": "4310",
+        "nombre": "Epicóndilo lateral"
+      }
+    ],
+    "animal": "canino",
+    "RX": true
+  },
+  {
+    "nombre": "femurIzquierdoVistaCaudal",
+    "points": [
+      {
+        "posX": "1550",
+        "posY": "275",
+        "nombre": "Cabeza de fémur"
+      },
+      {
+        "posX": "2100",
+        "posY": "615",
+        "nombre": "Fóvea de la cabeza"
+      },
+      {
+        "posX": "290",
+        "posY": "420",
+        "nombre": "Trocánter mayor"
+      },
+      {
+        "posX": "1070",
+        "posY": "470",
+        "nombre": "Fosa trocantérica"
+      },
+      {
+        "posX": "1950",
+        "posY": "875",
+        "nombre": "Cuello del fémur"
+      },
+      {
+        "posX": "1670",
+        "posY": "1100",
+        "nombre": "Trocánter menor"
+      },
+      {
+        "posX": "1650",
+        "posY": "2790",
+        "nombre": "Labio medial"
+      },
+      {
+        "posX": "610",
+        "posY": "2840",
+        "nombre": "Labio lateral"
+      },
+      {
+        "posX": "1140",
+        "posY": "2840",
+        "nombre": "Cara o superficie áspera"
+      },
+      {
+        "posX": "1120",
+        "posY": "3590",
+        "nombre": "Cara Poplítea"
+      },
+      {
+        "posX": "370",
+        "posY": "3510",
+        "nombre": "Tuberosidad supracondílea lateral"
+      },
+      {
+        "posX": "285",
+        "posY": "4060",
+        "nombre": "Cóndilo lateral"
+      },
+      {
+        "posX": "1890",
+        "posY": "4060",
+        "nombre": "Cóndilo medial"
+      },
+      {
+        "posX": "1120",
+        "posY": "4160",
+        "nombre": "Fosa intercondílea"
+      }
+    ],
+    "animal": "canino",
+    "RX": true
+  },
+  {
+    "nombre": "femurIzquierdoVistaMedial",
+    "points": [
+      {
+        "posX": "1285",
+        "posY": "540",
+        "nombre": "Fóvea de la cabeza de fémur"
+      },
+      {
+        "posX": "875",
+        "posY": "340",
+        "nombre": "Cabeza de fémur"
+      },
+      {
+        "posX": "1350",
+        "posY": "1125",
+        "nombre": "Trocánter menor"
+      },
+      {
+        "posX": "550",
+        "posY": "1990",
+        "nombre": "Cuerpo de fémur"
+      },
+      {
+        "posX": "435",
+        "posY": "3720",
+        "nombre": "Tróclea de fémur"
+      },
+      {
+        "posX": "1340",
+        "posY": "3700",
+        "nombre": "Cóndilo medial"
+      }
+    ],
+    "animal": "canino",
+    "RX": true
+  },
+  {
+    "nombre": "femurEpifisisDistalVistaCaudal",
+    "points": [
+      {
+        "posX": "200",
+        "posY": "125",
+        "nombre": "Tuberosidad supracondílea lateral"
+      },
+      {
+        "posX": "580",
+        "posY": "180",
+        "nombre": "Cara poplítea"
+      },
+      {
+        "posX": "145",
+        "posY": "300",
+        "nombre": "Cara articular para hueso sesamideo lateral"
+      },
+      {
+        "posX": "910",
+        "posY": "270",
+        "nombre": "Cara articular para hueso sesamoideo medial"
+      },
+      {
+        "posX": "435",
+        "posY": "3720",
+        "nombre": "Tróclea de fémur"
+      },
+      {
+        "posX": "520",
+        "posY": "400",
+        "nombre": "Línea intercondílea"
+      },
+      {
+        "posX": "300",
+        "posY": "560",
+        "nombre": "Cóndilo lateral"
+      },
+      {
+        "posX": "755",
+        "posY": "560",
+        "nombre": "Cóndilo medial"
+      }
+    ],
+    "animal": "canino",
+    "RX": true
+  },
+  {
+    "nombre": "femurepifisisDistalVistaCraneal",
+    "points": [
+      {
+        "posX": "590",
+        "posY": "225",
+        "nombre": "Tróclea del femur"
+      },
+      {
+        "posX": "1045",
+        "posY": "640",
+        "nombre": "Epicóndilo media"
+      },
+      {
+        "posX": "125",
+        "posY": "670",
+        "nombre": "Epicóndilo latera"
+      },
+      {
+        "posX": "630",
+        "posY": "570",
+        "nombre": "Rótula o patela"
+      }
+    ],
+    "animal": "canino",
+    "RX": true
+  }
+]

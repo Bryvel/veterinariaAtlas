@@ -1,0 +1,79 @@
+[
+  {
+    "nombre": "tarsoYMetatarsoIzquierdosVistaDorsal",
+    "points": [
+      {
+        "posX": "1170",
+        "posY": "210",
+        "nombre": "Tuberosidad del calcáneo"
+      },
+      {
+        "posX": "1120",
+        "posY": "540",
+        "nombre": "Calcáneo"
+      },
+      {
+        "posX": "760",
+        "posY": "500",
+        "nombre": "Tróclea del astrágalo"
+      },
+      {
+        "posX": "640",
+        "posY": "1505",
+        "nombre": "Cabeza del astrágalo"
+      },
+      {
+        "posX": "620",
+        "posY": "1780",
+        "nombre": "Central del tarso"
+      },
+      {
+        "posX": "140",
+        "posY": "2550",
+        "nombre": "Primer tarsiano"
+      },
+      {
+        "posX": "500",
+        "posY": "2060",
+        "nombre": "Segundo tarsiano"
+      },
+      {
+        "posX": "710",
+        "posY": "2060",
+        "nombre": "Tercer tarsiano"
+      },
+      {
+        "posX": "1000",
+        "posY": "2045",
+        "nombre": "Cuarto tarsiano"
+      },
+      {
+        "posX": "1570",
+        "posY": "3155",
+        "nombre": "Metatarso"
+      },
+      {
+        "posX": "470",
+        "posY": "3110",
+        "nombre": "Metatarsiano 2"
+      },
+      {
+        "posX": "700",
+        "posY": "3110",
+        "nombre": "Metatarsiano 3"
+      },
+      {
+        "posX": "910",
+        "posY": "3110",
+        "nombre": "Metatarsiano 4"
+      },
+      {
+        "posX": "1130",
+        "posY": "3110",
+        "nombre": "Metatarsiano 5"
+      }
+    ],
+    "animal": "canino",
+    "RX": true
+  },
+]

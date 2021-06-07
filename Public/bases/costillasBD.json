@@ -1,0 +1,128 @@
+[
+  {
+    "nombre": "costillas",
+    "points": [
+      {
+        "posX": "360",
+        "posY": "1140",
+        "nombre": "Tubérculo de la costilla"
+      },
+      {
+        "posX": "965",
+        "posY": "1410",
+        "nombre": "Tubérculo de la costilla"
+      },
+      {
+        "posX": "1288",
+        "posY": "1990",
+        "nombre": "Tubérculo de la costilla"
+      },
+      {
+        "posX": "500",
+        "posY": "1530",
+        "nombre": "Cabeza de la costilla"
+      },
+      {
+        "posX": "1096",
+        "posY": "1790",
+        "nombre": "Cabeza de la costilla"
+      },
+      {
+        "posX": "1690",
+        "posY": "2230",
+        "nombre": "Cabeza de la costilla"
+      },
+      {
+        "posX": "3040",
+        "posY": "600",
+        "nombre": "Cuerpo de la costilla"
+      },
+      {
+        "posX": "2751",
+        "posY": "1330",
+        "nombre": "Cuerpo de la costilla"
+      },
+      {
+        "posX": "2527",
+        "posY": "1960",
+        "nombre": "Cuerpo de la costilla"
+      },
+      {
+        "posX": "1770",
+        "posY": "2090",
+        "nombre": "Cuello de la costilla"
+      },
+      {
+        "posX": "570",
+        "posY": "1410",
+        "nombre": "Cuello de la costilla"
+      },
+      {
+        "posX": "1220",
+        "posY": "1650",
+        "nombre": "Cuello de la costilla"
+      }
+    ],
+    "animal": "canino",
+    "RX": true
+  },
+  {
+    "nombre": "costillasExtremoProximal",
+    "points": [
+      {
+        "posX": "976",
+        "posY": "838",
+        "nombre": "Cabeza de la costilla "
+      },
+      {
+        "posX": "1338",
+        "posY": "947",
+        "nombre": "Cabeza de la costilla"
+      },
+      {
+        "posX": "810",
+        "posY": "840",
+        "nombre": "Cuello de la costilla"
+      },
+      {
+        "posX": "1570",
+        "posY": "910",
+        "nombre": "Cuello de la costilla"
+      },
+      {
+        "posX": "881",
+        "posY": "534",
+        "nombre": "Tubérculo de la costilla"
+      },
+      {
+        "posX": "1850",
+        "posY": "461",
+        "nombre": "Tubérculo de la costilla"
+      }
+    ],
+    "animal": "canino",
+    "RX": true
+  },
+  {
+    "nombre": "esternónVistaLateralIzquierda",
+    "points": [
+      {
+        "posX": "590",
+        "posY": "1300",
+        "nombre": "Manubrio del esternón"
+      },
+      {
+        "posX": "1175",
+        "posY": "1310",
+        "nombre": "Esternebra"
+      },
+      {
+        "posX": "2420",
+        "posY": "430",
+        "nombre": "Cartílago costal"
+      }
+    ],
+    "animal": "canino",
+    "RX": true
+  }
+]

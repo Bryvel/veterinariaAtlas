@@ -1,0 +1,76 @@
+[
+  {
+    "nombre": "vertebrasToracicasVistaLateralIzquierda",
+    "points": [
+      {
+        "posX": "1694",
+        "posY": "2271",
+        "nombre": "Agujero intervertebral"
+      },
+      {
+        "posX": "2069",
+        "posY": "2247",
+        "nombre": "Apófisis transversa"
+      },
+      {
+        "posX": "2216",
+        "posY": "2572",
+        "nombre": "Cuerpo vertebral"
+      },
+      {
+        "posX": "3260",
+        "posY": "1950",
+        "nombre": "Apófisis articular caudal"
+      },
+      {
+        "posX": "3410",
+        "posY": "1000",
+        "nombre": "Apófisis espinosa"
+      }
+    ],
+    "animal": "canino",
+    "RX": true
+  },
+  {
+    "nombre": "verrtebrasToracicasAmpliaciónVistaLateralIzquierda",
+    "points": [
+      {
+        "posX": "836",
+        "posY": "1237",
+        "nombre": "Carilla costal de la apófisis transversa"
+      },
+      {
+        "posX": "1142",
+        "posY": "1071",
+        "nombre": "Agujero intervertebral"
+      },
+      {
+        "posX": "1190",
+        "posY": "1740",
+        "nombre": "Hemifaceta costal caudal"
+      },
+      {
+        "posX": "1440",
+        "posY": "1750",
+        "nombre": "Hemifaceta costal craneal"
+      },
+      {
+        "posX": "1680",
+        "posY": "1180",
+        "nombre": "Escotadura vertebral caudal"
+      },
+      {
+        "posX": "2060",
+        "posY": "1140",
+        "nombre": "Escotadura vertebral craneal"
+      },
+      {
+        "posX": "2728",
+        "posY": "740",
+        "nombre": "Carilla articular caudal"
+      }
+    ],
+    "animal": "canino",
+    "RX": true
+  }
+]

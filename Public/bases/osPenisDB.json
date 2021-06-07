@@ -1,0 +1,29 @@
+[
+  {
+    "nombre": "osPenisOHuesoPeneano",
+    "points": [
+      {
+        "posX": "80",
+        "posY": "570",
+        "nombre": "Vértice"
+      },
+      {
+        "posX": "260",
+        "posY": "620",
+        "nombre": "Surco uretral"
+      },
+      {
+        "posX": "675",
+        "posY": "630",
+        "nombre": "Cuerpo"
+      },
+      {
+        "posX": "1380",
+        "posY": "460",
+        "nombre": "Base"
+      }
+    ],
+    "animal": "canino",
+    "RX": true
+  }
+]

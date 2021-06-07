@@ -1,0 +1,231 @@
+[
+  {
+    "nombre": "coxalIzquierdoIlionIsquionYPubisFusionadosVistaLateral",
+    "points": [
+      {
+        "posX": "1430",
+        "posY": "1310",
+        "nombre": "Ilion"
+      },
+      {
+        "posX": "2240",
+        "posY": "2370",
+        "nombre": "Acétabulo"
+      },
+      {
+        "posX": "2390",
+        "posY": "2810",
+        "nombre": "Pubis"
+      },
+      {
+        "posX": "3000",
+        "posY": "2350",
+        "nombre": "Isquion"
+      }
+    ],
+    "animal": "canino",
+    "RX": true
+  },
+  {
+    "nombre": "coxalIzquierdoVistaLateral",
+    "points": [
+      {
+        "posX": "650",
+        "posY": "490",
+        "nombre": "Cresta Iliaca"
+      },
+      {
+        "posX": "1835",
+        "posY": "185",
+        "nombre": "Espina iliaca dorsal craneal"
+      },
+      {
+        "posX": "2180",
+        "posY": "460",
+        "nombre": "Tuberosidad sacra"
+      },
+      {
+        "posX": "2310",
+        "posY": "900",
+        "nombre": "Espina iliaca dorsal caudal"
+      },
+      {
+        "posX": "1380",
+        "posY": "845",
+        "nombre": "Cara glútea del ala del ilión"
+      },
+      {
+        "posX": "550",
+        "posY": "1320",
+        "nombre": "Espina iliaca ventral craneal"
+      },
+      {
+        "posX": "750",
+        "posY": "1610",
+        "nombre": "Tuberosidad  coxal"
+      },
+      {
+        "posX": "1030",
+        "posY": "1610",
+        "nombre": "Espina ilíaca ventral caudal"
+      },
+      {
+        "posX": "2630",
+        "posY": "1460",
+        "nombre": "Escotadura isquiática mayor"
+      },
+      {
+        "posX": "1942",
+        "posY": "1995",
+        "nombre": "Tuberosidad para el recto femoral"
+      },
+      {
+        "posX": "3400",
+        "posY": "1910",
+        "nombre": "Espina isquiática"
+      },
+      {
+        "posX": "3810",
+        "posY": "2020",
+        "nombre": "Escotadura isquiática menor"
+      },
+      {
+        "posX": "1980",
+        "posY": "2370",
+        "nombre": "Acetábulo"
+      },
+      {
+        "posX": "2950",
+        "posY": "2630",
+        "nombre": "Agujero obturador"
+      },
+      {
+        "posX": "3800",
+        "posY": "2520",
+        "nombre": "Tuberosidad isquiática"
+      }
+    ],
+    "animal": "canino",
+    "RX": true
+  },
+  {
+    "nombre": "coxalesVistaVentral",
+    "points": [
+      {
+        "posX": "2250",
+        "posY": "510",
+        "nombre": "Ala del Ilión"
+      },
+      {
+        "posX": "1900",
+        "posY": "335",
+        "nombre": "Superficie sacropélvica"
+      },
+      {
+        "posX": "1300",
+        "posY": "830",
+        "nombre": "Caras articulares auriculares"
+      },
+      {
+        "posX": "2080",
+        "posY": "1140",
+        "nombre": "Línea arqueada o arcuata"
+      },
+      {
+        "posX": "910",
+        "posY": "1310",
+        "nombre": "Eminencia ileopúbica o ileopectínea"
+      },
+      {
+        "posX": "1640",
+        "posY": "1420",
+        "nombre": "Espina del pubis"
+      },
+      {
+        "posX": "1320",
+        "posY": "1455",
+        "nombre": "Escotadura ileopúbica o pecten"
+      },
+      {
+        "posX": "2200",
+        "posY": "1740",
+        "nombre": "Agujero obturador"
+      },
+      {
+        "posX": "1640",
+        "posY": "2300",
+        "nombre": "Sínfisis púbica"
+      },
+      {
+        "posX": "2490",
+        "posY": "2360",
+        "nombre": "Tuberosidad isquiática"
+      },
+      {
+        "posX": "1330",
+        "posY": "2560",
+        "nombre": "Arco isquiático"
+      }
+
+    ],
+    "animal": "canino",
+    "RX": true
+  },
+  {
+    "nombre": "coxalesVistaDorsal",
+    "points": [
+      {
+        "posX": "2600",
+        "posY": "600",
+        "nombre": "Tuberosidad sacra"
+      },
+      {
+        "posX": "1647",
+        "posY": "775",
+        "nombre": "Cara articular auricular"
+      },
+      {
+        "posX": "1845",
+        "posY": "1480",
+        "nombre": "Escotadura  isquiática mayor"
+      },
+      {
+        "posX": "2530",
+        "posY": "1740",
+        "nombre": "Espina isquiática"
+      },
+      {
+        "posX": "560",
+        "posY": "1970",
+        "nombre": "Acetábulo"
+      },
+      {
+        "posX": "1960",
+        "posY": "2350",
+        "nombre": "Agujero obturador"
+      },
+      {
+        "posX": "2700",
+        "posY": "2270",
+        "nombre": "Escotadura isquiática menor"
+      },
+      {
+        "posX": "1700",
+        "posY": "2440",
+        "nombre": "Sínfisis púbica"
+      },
+      {
+        "posX": "3010",
+        "posY": "2500",
+        "nombre": "Tuberosidad isquiática"
+      },
+      {
+        "posX": "1640",
+        "posY": "2855",
+        "nombre": "Arco isquiático"
+      }
+    ],
+    "animal": "canino",
+    "RX": true
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+  "nombre": "sacroVistaLateralIzquierda",
+  "points": [
+    {
+      "posX": "842",
+      "posY": "1593",
+      "nombre": "Cara auricular"
+    },
+    {
+      "posX": "1990",
+      "posY": "1020",
+      "nombre": "Cresta sacra media"
+    },
+    {
+      "posX": "2270",
+      "posY": "1340",
+      "nombre": "Agujero sacro dorsal"
+    },
+    {
+      "posX": "2360",
+      "posY": "1800",
+      "nombre": "Cresta sacra lateral"
+    },
+    {
+      "posX": "2700",
+      "posY": "1380",
+      "nombre": "Apófisis articular caudal"
+    }
+  ],
+  "animal": "canino",
+  "RX": true
+}
+]

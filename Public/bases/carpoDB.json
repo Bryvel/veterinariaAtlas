@@ -1,0 +1,128 @@
+[
+  {
+    "nombre": "carpoEnTodasSusVistas",
+    "points": [
+      {
+        "posX": "530",
+        "posY": "500",
+        "nombre": "Intermedio radial del carpo (Semilunar)"
+      },
+      {
+        "posX": "2280",
+        "posY": "390",
+        "nombre": "Intermedio radial del carpo (Semilunar)"
+      },
+      {
+        "posX": "690",
+        "posY": "1430",
+        "nombre": "Intermedio radial del carpo (Semilunar)"
+      },
+      {
+        "posX": "2420",
+        "posY": "1550",
+        "nombre": "Intermedio radial del carpo (Semilunar)"
+      },
+      {
+        "posX": "935",
+        "posY": "470",
+        "nombre": "Carpo cubital (Piramidal)"
+      },
+      {
+        "posX": "1900",
+        "posY": "665",
+        "nombre": "Carpo cubital (Piramidal)"
+      },
+      {
+        "posX": "300",
+        "posY": "1385",
+        "nombre": "Carpo cubital (Piramidal)"
+      },
+      {
+        "posX": "1835",
+        "posY": "1510",
+        "nombre": "Carpo cubital (Piramidal)"
+      },
+      {
+        "posX": "815",
+        "posY": "200",
+        "nombre": "Accesorio del carpo (Pisiforme)"
+      },{
+        "posX": "1900",
+        "posY": "390",
+        "nombre": "Accesorio del carpo (Pisiforme)"
+      },
+      {
+        "posX": "380",
+        "posY": "1800",
+        "nombre": "Accesorio del carpo (Pisiforme)"
+      },
+      {
+        "posX": "2080",
+        "posY": "1335",
+        "nombre": "Accesorio del carpo (Pisiforme)"
+      },
+      {
+        "posX": "2640",
+        "posY": "665",
+        "nombre": "Carpiano del carpo (Trapecio)"
+      },
+      {
+        "posX": "2610",
+        "posY": "1600",
+        "nombre": "Carpiano del carpo (Trapecio)"
+      },
+      {
+        "posX": "115",
+        "posY": "905",
+        "nombre": "Carpiano del carpo (Trapecio)"
+      },
+      {
+        "posX": "345",
+        "posY": "705",
+        "nombre": "I Carpiano del carpo (Trapezoide)"
+      },
+      {
+        "posX": "2415",
+        "posY": "590",
+        "nombre": "I Carpiano del carpo (Trapezoide)"
+      },
+      {
+        "posX": "2450",
+        "posY": "1720",
+        "nombre": "I Carpiano del carpo (Trapezoide)"
+      },
+      {
+        "posX": "560",
+        "posY": "760",
+        "nombre": "II Carpiano del carpo (Grande)"
+      },
+      {
+        "posX": "2270",
+        "posY": "690",
+        "nombre": "II Carpiano del carpo (Grande)"
+      },
+      {
+        "posX": "2260",
+        "posY": "1730",
+        "nombre": "II Carpiano del carpo (Grande)"
+      },
+      {
+        "posX": "835",
+        "posY": "670",
+        "nombre": "III Carpiano del carpo (Ganchoso)"
+      },
+      {
+        "posX": "2090",
+        "posY": "680",
+        "nombre": "III Carpiano del carpo (Ganchoso)"
+      },
+      {
+        "posX": "2000",
+        "posY": "1730",
+        "nombre": "III Carpiano del carpo (Ganchoso)"
+      }
+    ],
+    "animal": "canino",
+    "RX": true
+  }
+]
