@@ -4,7 +4,7 @@
     //Remover la lista cargada anterior
       $("#listaCarga").remove();
     //Generar un nuevo nodo lista
-      $("#listaDetalle").append("<h5><ol id="+"listaCarga"+"></ol></h5>");
+      $("#listaDetalle").append("<h5><ol id="+"listaCarga"+" class="+"px-0"+"></ol></h5>");
 
    //Cargar la lista con el array
 
