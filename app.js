@@ -6,6 +6,7 @@ var mongoose=require('mongoose');
 
 //set app enviroment
 app.set('port',process.env.PORT || 80);
+//server u
 app.set('views',path.join(__dirname,'views'));
 app.set('view engine','ejs');
 app.use( express.static(__dirname + '/Public'));
