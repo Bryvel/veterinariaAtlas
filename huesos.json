@@ -1,0 +1,221 @@
+[{
+  "_id": {
+    "$oid": "5e1b8f01e0a7d72a848a4370"
+  },
+  "nombre": "Esqueleto Visceral- Os penis",
+  "animal": "canino",
+  "partes": [
+    "Os penis o hueso peneano "
+  ]
+},{
+  "_id": {
+    "$oid": "5e1b8c01e0a7d72a848a436d"
+  },
+  "nombre": "Miembro Torácico Radio y Ulna",
+  "animal": "canino",
+  "partes": [
+    "Ulna izquierda- vista lateral",
+    "Ulna izquierda, epífisis proximal -vista  craneal",
+    "Radio izquierdo, epífisis proximal y distal -vista craneal ",
+    "Radio izquierdo, epífisis proximal-vista caudal",
+    "Ulna y radio izquierdos, epífisis distales -vista craneal",
+    "Huesos del antebrazo, radio y ulna- vista craneal"
+  ]
+},{
+  "_id": {
+    "$oid": "5e12597a1b356d3d5413a18b"
+  },
+  "animal": "canino",
+  "partes": [
+    "Vértebras torácicas - vista lateral izquierda",
+    "Vértebras torácicas, ampliación - vista lateral izquierda "
+  ],
+  "nombre": "Esqueleto Axial Vértebras Torácicas"
+},{
+  "_id": {
+    "$oid": "5e1b87ece0a7d72a848a436a"
+  },
+  "nombre": "Miembro Torácico Escápula",
+  "animal": "canino",
+  "partes": [
+    "Escápula izquierda -vista lateral",
+    "Escápula izquierda -vista medial ",
+    "Escápula, ángulo ventral"
+  ]
+},{
+  "_id": {
+    "$oid": "5e12b4821b356d3d5413a18e"
+  },
+  "nombre": "Generalidades",
+  "animal": "canino",
+  "partes": [
+    "Clasificación de huesos: Hueso plano, ejemplo: Escápula",
+    "Clasificación de huesos: Hueso largo, ejemplo: Húmero",
+    "Clasificación de huesos: Huesos cortos, ejemplo: Carpos",
+    "Clasificación de huesos: Huesos irregulares, ejemplo: Vértebras",
+    "Partes de un hueso largo, ejemplo: Húmero",
+    "Estructura de un hueso: Corte sagital del  hueso fémur del canino",
+    "Partes de una vértebra tipo "
+  ]
+},{
+  "_id": {
+    "$oid": "5db79ba3c18f6829f06c60b9"
+  },
+  "partes": [
+    "Huesos del cráneo- vista dorsal",
+    "Estructuras del cráneo-  vista dorsal",
+    "Huesos del cráneo- vista ventral",
+    "Estructuras del cráneo- vista ventro nucal",
+    "Orificios del cráneo - vista ventro nucal",
+    "Orificios del cráneo - vista ventro rostral",
+    "Huesos del cráneo - vista lateral",
+    "Estructuras del cráneo- vista lateral",
+    "Orificios del cráneo- vista lateral",
+    "Estructuras y orificios del cráneo, arco cigomático cortado - vista lateral ",
+    "Huesos del cráneo- vista caudal",
+    "Estructuras  y orificios del cráneo- vista caudal",
+    "Corte sagital de cráneo, se ha retirado la lamina perpendicular y se observa la cavidad nasal derecha ",
+    "Corte sagital del cráneo, lateral izquierdo",
+    "Base de la cavidad craneana ",
+    "Mandíbula izquierda - vista lateral",
+    "Mandíbula izquierda- vista medial"
+  ],
+  "animal": "canino",
+  "nombre": "Esqueleto Axial Cráneo"
+},{
+  "_id": {
+    "$oid": "5e24043dcd00045d789abc24"
+  },
+  "nombre": "Miembro Pelviano Tarso y Metatarso",
+  "animal": "canino",
+  "partes": [
+    "Tarso  y metatarso izquierdos- vista  dorsal"
+  ]
+},{
+  "_id": {
+    "$oid": "5e125e351b356d3d5413a18d"
+  },
+  "nombre": "Esqueleto Axial Costillas y Esternón",
+  "animal": "canino",
+  "partes": [
+    "Costillas ",
+    "Costillas -extremo proximal ",
+    "Esternón -vista lateral izquierda "
+  ]
+},{
+  "_id": {
+    "$oid": "5f0a85f23d4c27b77c00e77e"
+  },
+  "nombre": "Miembro Pelviano Coxal",
+  "partes": [
+    "Coxal izquierdo, ilion, isquion y pubis fusionados - vista lateral",
+    "Coxal izquierdo -vista lateral",
+    "Coxales -vista ventral",
+    "Coxales -vista dorsal"
+  ],
+  "animal": "canino"
+},{
+  "_id": {
+    "$oid": "5f0a70553d4c27b77c00e77b"
+  },
+  "nombre": "Esqueleto Axial Vértebras Lumbares",
+  "partes": [
+    "Vértebra lumbar-vista lateral izquierda",
+    "Vértebra lumbar-vista craneal"
+  ],
+  "animal": "canino"
+},{
+  "_id": {
+    "$oid": "5f0a7a423d4c27b77c00e77c"
+  },
+  "nombre": "Esqueleto Axial Sacro",
+  "partes": [
+    "Sacro-vista ventral",
+    "Sacro-vista dorsal",
+    "Sacro-vista lateral izquierda"
+  ],
+  "animal": "canino"
+},{
+  "_id": {
+    "$oid": "5d9d5e80a8c31d1f8072b9b0"
+  },
+  "partes": [
+    "Atlas -vista dorsal",
+    "Atlas -vista ventral",
+    "Atlas -vista craneal",
+    "Atlas -vista caudal",
+    "Axis -vista lateral izquierda",
+    "Axis -vista caudal",
+    "Atlas y axis -vista dorsal",
+    "Vértebras cervicales -vista craneal ",
+    "Vértebras cervicales -vista latero dorsal "
+  ],
+  "animal": "canino",
+  "nombre": "Esqueleto Axial Vértebras Cervicales",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5e1b8a0ae0a7d72a848a436b"
+  },
+  "nombre": "Miembro Torácico Húmero",
+  "animal": "canino",
+  "partes": [
+    "Húmero izquierdo -vista craneal",
+    "Húmero izquierdo -vista caudal",
+    "Húmero izquierdo -vista lateral ",
+    "Húmero izquierdo -vista medial "
+  ]
+},{
+  "_id": {
+    "$oid": "5f0a7f333d4c27b77c00e77d"
+  },
+  "nombre": "Esqueleto Axial Vértebras Coccígeas",
+  "partes": [
+    "Vértebras coccígeas-vista dorsal"
+  ],
+  "animal": "canino"
+},{
+  "_id": {
+    "$oid": "5e1b92a7e0a7d72a848a4373"
+  },
+  "nombre": "Miembro Pelviano Tibia y Fíbula",
+  "animal": "canino",
+  "partes": [
+    "Tibia y fíbula izquierdas, epífisis proximales - vista  lateral",
+    "Tibia y fíbula izquierdas, epífisis distales -vista  craneal",
+    "Tibia y fíbula izquierdas -vista  medial",
+    "Tibia izquierda, epífisis proximal- vista proximal"
+  ]
+},{
+  "_id": {
+    "$oid": "5e1b912de0a7d72a848a4372"
+  },
+  "nombre": "Miembro Pelviano Fémur",
+  "animal": "canino",
+  "partes": [
+    "Fémur izquierdo -vista craneal",
+    "Fémur izquierdo -vista lateral ",
+    "Fémur izquierdo -vista caudal  ",
+    "Fémur derecho -vista  medial ",
+    "Fémur, epífisis distal -vista caudal",
+    "Fémur, epífisis distal -vista  craneal"
+  ]
+},{
+  "_id": {
+    "$oid": "5e1b8d82e0a7d72a848a436e"
+  },
+  "nombre": "Miembro Torácico Carpo",
+  "animal": "canino",
+  "partes": [
+    "Carpo en sus diferentes vistas"
+  ]
+},{
+  "_id": {
+    "$oid": "60f8fe066177207ae2e89c2d"
+  },
+  "nombre": "Miembro Torácico Metacarpos y Falanges",
+  "animal": "canino",
+  "partes": [
+    "Metacarpo y falanges, sin huesos sesamoideos - vista dorsal"
+  ]
+}]
