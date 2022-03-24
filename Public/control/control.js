@@ -9,6 +9,7 @@ const contenedorLamina = new Vue({
         nameLamina:"",
         modePanel:false,
         laminaMode:false,
+        loading:true,
 
     },
     mounted(){
@@ -19,6 +20,12 @@ const contenedorLamina = new Vue({
           const dataRaw= await axios.get("http://atlascanino.uce.edu.ec/api/v1/getOrgano/"+organo)
           this.partes=dataRaw.data[0].partes
           this.nombre=dataRaw.data[0].nombre
+      },
+      _loadingImg: function(index){
+       var timeout;
+       timeout=setTimeout(this._setLamina(index),2000)
+       this.modePanel=true;
+       this.laminaMode=false;
       },
       _setLamina: function(index){
        this.sourceLamina="/organos/encefalo"+index+".html" 
