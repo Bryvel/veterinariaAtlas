@@ -1,7 +1,6 @@
 var express=require('express');
 var app=express();
 var path=require('path');
-var morgan=require('morgan');
 var mongoose=require('mongoose');
 
 //set app enviroment
@@ -11,17 +10,20 @@ app.set('views',path.join(__dirname,'views'));
 app.set('view engine','ejs');
 app.use( express.static(__dirname + '/Public'));
 
-//Use middleware
-app.use(morgan('dev'));
 //DB connection
-mongoose.connect('mongodb+srv://sebas:sebas@cluster0.wh1fi.mongodb.net/veterinaria')
+mongoose.connect('mongodb://localhost:27017/veterinaria')
 .then(db=>{console.log('db connected')})
 .catch(err=>{console.log(err)})
 //pruebas
 // routes
 var indexRoute=require('./routes/index');
-const { db } = require('./models/hueso');
+var apiRoute=require('./routes/api')
+var v2Route=require('./routes/migration')
+
 app.use('/',indexRoute);
+app.use('/api',apiRoute);
+app.use('/v2',v2Route);
+
 app.listen(app.get('port'),()=>{
     console.log('server on port 80')
 })

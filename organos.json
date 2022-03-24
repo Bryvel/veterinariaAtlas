@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "6230cc396ac79a3949d247f5"
+  },
+  "nombre": "Encéfalo",
+  "slug": "encefalo",
+  "partes": [
+    "Lóbulos cerebrales - vista lateral",
+    "Circunvoluciones cerebrales - vista lateral",
+    "Surcos cerebrales - vista lateral",
+    "Surcos cerebrales - vista dorsal",
+    "Circunvoluciones cerebrales - vista dorsal",
+    "Estructuras  encéfalo - vista dorsal",
+    "Estructuras cerebelo – vista dorsal",
+    "Estructuras encéfalo – vista ventral",
+    "Estructuras rinencéfalo -  vista dorsal ",
+    "Estructuras encéfalo (corte plano medio)",
+    "Estructuras tallo encefálico – vista dorsal",
+    "Estructuras tallo encefálico (diencéfalo y mesencéfalo)- vista dorsal",
+    "Estructuras tallo encefálico (epitálamo) – vista dorsal",
+    "Estructuras tallo encefálico – vista ventral"
+  ],
+  "animal": "canino"
+}]

@@ -19,10 +19,14 @@ router.get('/Generalidades',async (req,res)=>{
          huesos
      })
  })
+ 
 
 
  router.get('/',async (req,res)=>{
     
     res.render('home')
 })
+
+
+
 module.exports=router;
