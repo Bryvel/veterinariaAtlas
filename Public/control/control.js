@@ -24,6 +24,7 @@ const contenedorLamina = new Vue({
       _loadingImg: function(index){
        var timeout;
        timeout=setTimeout(this._setLamina(index),2000)
+       this.loading=false;
        this.modePanel=true;
        this.laminaMode=false;
       },
