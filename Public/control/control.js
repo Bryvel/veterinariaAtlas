@@ -31,8 +31,6 @@ const contenedorLamina = new Vue({
        this.sourceLamina="/organos/encefalo"+index+".html" 
        this.sourceAtlas="/organos/encefalo"+index+".jpg" 
        this.nameLamina=this.partes[index];
-       this.modePanel=true;
-       this.laminaMode=false;
       },
       _setMode: function(mode){
           if (mode=="atlas"){
