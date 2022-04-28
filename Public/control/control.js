@@ -9,7 +9,9 @@ const contenedorLamina = new Vue({
         nameLamina:"",
         modePanel:false,
         laminaMode:false,
-        loading:true,
+        index:"",
+        portada:true
+        
 
     },
     mounted(){
@@ -22,14 +24,13 @@ const contenedorLamina = new Vue({
           this.nombre=dataRaw.data[0].nombre
       },
       _loadingImg: function(index){
-       var timeout;
-       timeout=setTimeout(this._setLamina(index),2000)
+       this._setLamina(index)
        this.modePanel=true;
        this.laminaMode=false;
       },
       _setLamina: function(index){
-       this.sourceLamina="/organos/encefalo"+index+".html" 
-       this.sourceAtlas="/organos/encefalo"+index+".jpg" 
+       this.sourceLamina="/organos/encefalo/encefalo"+index+".html" 
+       this.sourceAtlas="/organos/encefalo/encefalo"+index+".jpg" 
        this.nameLamina=this.partes[index];
       },
       _setMode: function(mode){

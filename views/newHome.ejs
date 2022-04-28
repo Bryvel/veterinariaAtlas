@@ -23,7 +23,8 @@
             <div class="container-fluid" style="background-color: #0860A8;">
                 <h5 class="navBar-font col-7 text-white my-3">Atlas virtual: Anatomía canina</h5>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                    style="background-color: white;">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -45,25 +46,45 @@
             </div>
         </nav>
     </div>
-    <div class="container">
-        <div id="contenedorLamina">
-            <h1 class="text-white text-center my-2">Órganos Sólidos</h1>
-            <h2 class="text-white text-center mb-3">{{nombre}}</h2>
-            <div class="row my-3 ">
-                <div v-for="parte,index in partes" class="col-4 my-2  d-grid gap-2">
-                    <button type="button" class="btn btn-block btn-light p-2 text-center" style="font-size: 13px; "
-                        @click="_loadingImg(index)">{{parte}}</button>
+    <div class="container" id="contenedorLamina">
+        <div class="row justify-content-center" v-if="!portada">
+            <div class="col-12" id="imageContainer">
+                <div class="ratio" style="--bs-aspect-ratio: 80%;">
+                    <iframe style="width: 100%; height: 100%;"  id="contenedor" src="/organos/portada/portada.html"
+                        style="border:none"></iframe>
                 </div>
+            </div>
+
+        </div>
+        <div  v-if="portada">
+            <h1 class="text-white text-center my-4">{{nombre}}</h1>
+            <div class="d-none d-md-block">
+                <div class="row my-3">
+                    <div v-for="parte,index in partes" class="col-4 my-2  d-grid gap-2 ">
+                        <button type="button" class="btn btn-block btn-light p-2 text-center" style="font-size: 13px; "
+                            @click="_loadingImg(index)">{{parte}}</button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-block d-md-none px-3">
+                <div class="row my-3">
+                    <p style="color:white">Selecciona una Lámina*</p>
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm" @change="_loadingImg(index)" v-model="index">
+                        <option :value="index" v-for="parte,index in partes">{{parte}}</option>
+                    </select>
+                </div>|
             </div>
             <div>
                 <h3 class="text-center text-white my-4">{{nameLamina}}</h3>
             </div>
-            <div class="row col-6 mx-auto text-center" v-if="modePanel">
+            <div class="row col-md-6 col-12 mx-auto text-center" v-if="modePanel">
                 <div class="col-6">
-                     <a href="#" style="color:#F2C94C" @click="_setMode('interactive')">Modo Vista Interactiva</a>
+                    <a href="#" style="color:#F2C94C" @click="_setMode('interactive')" class="d-md-block d-none">Modo Vista Interactiva</a>
+                    <a href="#" style="color:#F2C94C;font-size: 10px;" @click="_setMode('interactive')" class="d-md-none">Modo Vista Interactiva</a>
                 </div>
                 <div class="col-6">
-                    <a href="#" style="color:#F2C94C " @click="_setMode('atlas')">Modo Vista Atlas</a>
+                    <a href="#" style="color:#F2C94C" @click="_setMode('atlas')" class="d-md-block d-none">Modo Vista Atlas</a>
+                    <a href="#" style="color:#F2C94C ;font-size: 10px;" @click="_setMode('atlas')" class="d-md-none">Modo Vista Atlas</a>
                 </div>
 
             </div>
@@ -74,15 +95,16 @@
                             style="border:none"></iframe>
                     </div>
                 </div>
-              
+
             </div>
             <div class="row justify-content-center" v-if="laminaMode">
                 <div class="col-12" id="imageContainer">
-                        <img style="height: auto; width: 100%;" :src="sourceAtlas">
+                    <img style="height: auto; width: 100%;" :src="sourceAtlas">
                 </div>
             </div>
             <div class="text-center col-8 mx-auto my-4" v-if="!laminaMode">
-                <p class="text-white" style="border: white 1px solid; border-radius:5px"> Pasa tu cursor o toca una parte especifica del Organo para ver su nombre</p>
+                <p class="text-white py-2" style="border: white 1px solid; border-radius:5px">Toca un estructura para
+                    ver su nombre</p>
             </div>
         </div>
     </div>
@@ -137,4 +159,5 @@
         color: white;
     }
 </style>
+
 </html>
