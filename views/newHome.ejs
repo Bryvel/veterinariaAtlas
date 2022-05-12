@@ -65,7 +65,7 @@
                 <div class="row my-3">
                     <div v-for="parte,index in partes" class="col-4 my-2  d-grid gap-2 ">
                         <button type="button" class="btn btn-block btn-light p-2 text-center" style="font-size: 13px; "
-                            @click="_loadingImg(index,organo)">{{index+1}}. {{parte}}</button>
+                            @click="_loadingImg(index)">{{index+1}}. {{parte}}</button>
                     </div>
                 </div>
             </div>
@@ -73,7 +73,7 @@
                 <div class="row my-3">
                     <p style="color:white">Selecciona una Lámina*</p>
                     <select class="form-select form-select-sm" aria-label=".form-select-sm"
-                        @change="_loadingImg(index,organo)" v-model="index">
+                        @change="_loadingImg(index)" v-model="index">
                         <option :value="index" v-for="parte,index in partes">{{index+1}}. {{parte}}</option>
                     </select>
                 </div>|

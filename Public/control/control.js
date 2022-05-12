@@ -24,7 +24,7 @@ const contenedorLamina = new Vue({
            this.lamina=true;
       },
       getPartes: async function(organo){
-          const dataRaw= await axios.get("http://localhost/api/v1/getOrgano/"+organo)
+          const dataRaw= await axios.get("http://atlascanino.uce.edu.ec/api/v1/getOrgano/"+organo)
           this.partes=dataRaw.data[0].partes
           this.nombre=dataRaw.data[0].nombre
       },
@@ -33,9 +33,9 @@ const contenedorLamina = new Vue({
        this.modePanel=true;
        this.laminaMode=false;
       },
-      _setLamina: function(index,organo){
-       this.sourceLamina="/organos/"+organo+"/"+organo+index+".html" 
-       this.sourceAtlas="/organos/"+organo+"/"+organo+index+".jpg" 
+      _setLamina: function(index){
+       this.sourceLamina="/organos/"+this.organo+"/"+this.organo+index+".html" 
+       this.sourceAtlas="/organos/"+this.organo+"/"+this.organo+index+".jpg" 
        this.nameLamina=(index+1)+". "+this.partes[index];
       },
       _setMode: function(mode){
