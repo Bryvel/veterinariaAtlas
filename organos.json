@@ -21,4 +21,16 @@
     "Estructuras tallo encefálico – vista ventral"
   ],
   "animal": "canino"
+},{
+  "_id": {
+    "$oid": "627d6bdcbae2cfcf2e0ab351"
+  },
+  "animal": "canino",
+  "nombre": "Riñón",
+  "partes": [
+    "Estructuras externas del riñón ",
+    "Corte horizontal del riñón ",
+    "Estructuras renales –corte sagital medio del riñón"
+  ],
+  "slug": "rinon"
 }]
