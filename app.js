@@ -11,18 +11,18 @@ app.set('view engine','ejs');
 app.use( express.static(__dirname + '/Public'));
 
 //DB connection
-mongoose.connect('mongodb://localhost:27017/veterinaria')
+mongoose.connect('mongodb+srv://sebas:sebas@cluster0.wh1fi.mongodb.net/veterinaria')
 .then(db=>{console.log('db connected')})
 .catch(err=>{console.log(err)})
 //pruebas
 // routes
 var indexRoute=require('./routes/index');
 var apiRoute=require('./routes/api')
-var v2Route=require('./routes/migration')
+
 
 app.use('/',indexRoute);
 app.use('/api',apiRoute);
-app.use('/v2',v2Route);
+
 
 app.listen(app.get('port'),()=>{
     console.log('server on port 80')

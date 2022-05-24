@@ -2,7 +2,7 @@ var express=require('express');
 var router=express.Router();
 var hueso=require('../models/hueso');
 
-router.get('/Generalidades',async (req,res)=>{
+router.get('/huesos/Generalidades',async (req,res)=>{
     var nombre=req.params.nombre;
     var huesos= await hueso.find({ "nombre": "Generalidades"});
     console.log(huesos)
@@ -11,11 +11,11 @@ router.get('/Generalidades',async (req,res)=>{
     })
 })
 
- router.get('/:nombre',async (req,res)=>{
+ router.get('/huesos/:nombre',async (req,res)=>{
      var nombre=req.params.nombre;
      var huesos= await hueso.find({ "nombre": nombre});
      console.log(huesos)
-     res.render('container',{
+     res.render('containerHuesos',{
          huesos
      })
  })
@@ -24,9 +24,22 @@ router.get('/Generalidades',async (req,res)=>{
 
  router.get('/',async (req,res)=>{
     
-    res.render('home')
+    res.render('index')
 })
 
+router.get('/huesos',async (req,res)=>{
+    
+    res.render('huesos')
+})
 
+router.get('/organos',async (req,res)=>{
+    
+    res.render('organos')
+})
+
+router.get('/organos/container',async (req,res)=>{
+    
+    res.render('containerOrganos')
+})
 
 module.exports=router;
