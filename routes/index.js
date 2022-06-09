@@ -42,4 +42,9 @@ router.get('/organos/container',async (req,res)=>{
     res.render('containerOrganos')
 })
 
+router.get('/3D/pruebas',async (req,res)=>{
+    
+    res.render('3DContainer')
+})
+
 module.exports=router;
