@@ -1,11 +1,3 @@
-const contenedorPortada = new Vue({
-  el: "#contenedorPortada",
-  methods:{
-_clickOrgano: function(organo){
-  Vue.conten
-
-  }}
-})
 
 
 const contenedorLamina = new Vue({

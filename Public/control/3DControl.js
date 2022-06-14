@@ -1,120 +1,144 @@
 import * as THREE from 'three';
 
-        import { MTLLoader } from '/three.js/MTLLoader.js';
-        import { OBJLoader } from '/three.js/OBJLoader.js';
-        import { OrbitControls } from '/three.js/OrbitControls.js';
-        import { TeapotGeometry } from '/three.js/TeapotGeometry.js';
 
-        let camera, scene, renderer;
-        let cameraControls;
-        let ambientLight, light, light2, light3;
-        let tess = - 1;
+import { OrbitControls } from '/three.js/OrbitControls.js';
+import { GLTFLoader } from '/three.js/GLTFLoader.js';
+import { RoomEnvironment } from '/three.js/RoomEnvironment.js';
+
+let camera, scene, renderer;
+let cameraControls;
+let ambientLight, light, light2, light3;
 
 
-        init();
-        render();
-        function init() {
 
-            const container = document.createElement('div');
-            document.getElementById("3DViewer").appendChild(container);
+init();
+render();
 
-            const canvasWidth = window.innerWidth;
-            const canvasHeight = window.innerHeight;
 
-            // CAMERA
-            camera = new THREE.PerspectiveCamera(1, window.innerWidth / window.innerHeight, 0.1, 2000);
-            camera.position.z = 100;
-            camera.position.y = 25;
-            camera.position.x = 25
-            
-
-            // LIGHTS
-            ambientLight = new THREE.AmbientLight(0x333333);
-
-            light = new THREE.DirectionalLight(0xFFFFFF, 1.0);
-            light.position.set(0.32, 0.39, -10);
-            light2 = new THREE.DirectionalLight(0xFFFFFF, 1.0);
-            light2.position.set(0.32, 0.39, 10);
-            light3 = new THREE.DirectionalLight(0xFFFFFF, 1.0);
-            light3.position.set(0.32,- 0.39, 10);
-
-            // RENDERER
-            renderer = new THREE.WebGLRenderer({ antialias: true });
-            renderer.setPixelRatio(window.devicePixelRatio);
-            renderer.setSize(canvasWidth, canvasHeight);
-            renderer.outputEncoding = THREE.sRGBEncoding;
-            container.appendChild(renderer.domElement);
-
-            // EVENTS
-            window.addEventListener('resize', onWindowResize);  
-
-            // CONTROLS
-            cameraControls = new OrbitControls(camera, renderer.domElement);
-            cameraControls.addEventListener('change', render);
+function init() {
 
 
 
 
-            // scene itself
-            scene = new THREE.Scene();
-            scene.add(ambientLight);
-            scene.add(light,light2,light3);
-            const onProgress = function (xhr) {
+    const container = document.createElement('div');
+    document.getElementById("Viewer").appendChild(container);
 
-                if (xhr.lengthComputable) {
+    const canvasWidth = window.innerWidth;
+    const canvasHeight = window.innerHeight;
+    const material = new THREE.MeshStandardMaterial();
+    const loader = new GLTFLoader();
+    // CAMERA
+    camera = new THREE.PerspectiveCamera(1, window.innerWidth / window.innerHeight, 0.1, 2000);
+    camera.position.z = 100;
+    camera.position.y = 25;
+    camera.position.x = 25
 
-                    const percentComplete = xhr.loaded / xhr.total * 100;
-                    console.log(Math.round(percentComplete, 2) + '% downloaded');
+      // scene itself
+      scene = new THREE.Scene();
 
-                }
+    // LIGHTS
+    const ambientLight = new THREE.AmbientLight( 0xffffff, 1.2);
+    scene.add( ambientLight );
 
-            };
+    light = new THREE.DirectionalLight(0xFFFFFF, 1.3 );
+    light.position.set(0.32, 0.39, -10);
+    scene.add( light );
 
-            new MTLLoader()
-                .setPath('/3D/encefalo/')
-                .load('Pruebas2.mtl', function (materials) {
+    const pointLight = new THREE.PointLight(0xffffff, 1);
+    camera.add(pointLight);
 
-                    materials.preload();
+    // RENDERER
 
-                    new OBJLoader()
-                        .setMaterials(materials)
-                        .setPath('/3D/encefalo/')
-                        .load('Pruebas2.obj', function (object) {
+    renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.physicallyCorrectLights = true
+    renderer.shadowMap.enabled = true
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1;
+    renderer.setSize(canvasWidth, canvasHeight);
+    container.appendChild(renderer.domElement);
+    renderer.outputEncoding = THREE.sRGBEncoding;
 
-                            object.position.y = 0;
-                            scene.add(object);
 
-                        }, onProgress);
+    // EVENTS
+    window.addEventListener('resize', onWindowResize);
 
-                });
-        }
+    // CONTROLS
+    cameraControls = new OrbitControls(camera, renderer.domElement);
+    cameraControls.addEventListener('change', render);
 
-        function onWindowResize() {
+    const environment = new RoomEnvironment();
+    const pmremGenerator = new THREE.PMREMGenerator(renderer);
 
-            const canvasWidth = window.innerWidth;
-            const canvasHeight = window.innerHeight;
+    loader.load(
+        // resource URL
+        '/3D/encefalo/Pruebas.gltf',
+        // called when the resource is loaded
+        function (gltf) {
 
-            renderer.setSize(canvasWidth, canvasHeight);
+            scene.add(gltf.scene);
 
-            camera.aspect = canvasWidth / canvasHeight;
-            camera.updateProjectionMatrix();
+            gltf.animations; // Array<THREE.AnimationClip>
+            gltf.scene; // THREE.Group
+            gltf.scenes; // Array<THREE.Group>
+            gltf.cameras; // Array<THREE.Camera>
+            gltf.asset; // Object
 
-            render();
+        },
+        // called while loading is progressing
+        function (xhr) {
+
+            console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+
+        },
+        // called when loading has errors
+        function (error) {
+
+            console.log('An error happened');
 
         }
+    );
 
-            function render(){
 
-                renderer.render( scene, camera );
+  
+    
+    const onProgress = function (xhr) {
 
-            }
+        if (xhr.lengthComputable) {
 
-			function animate() {
-				requestAnimationFrame( animate );
-    				renderer.render( scene, camera );
-			};
+            const percentComplete = xhr.loaded / xhr.total * 100;
+            console.log(Math.round(percentComplete, 2) + '% downloaded');
 
-			animate();
+        }
 
+    };
+
+}
+
+function onWindowResize() {
+
+    const canvasWidth = window.innerWidth;
+    const canvasHeight = window.innerHeight;
+
+    renderer.setSize(canvasWidth, canvasHeight);
+
+    camera.aspect = canvasWidth / canvasHeight;
+    camera.updateProjectionMatrix();
+
+    render();
+
+}
+
+function render() {
+
+    renderer.render(scene, camera);
+
+}
+
+function animate() {
+    requestAnimationFrame(animate);
+    renderer.render(scene, camera);
+};
+
+animate();
 
 
