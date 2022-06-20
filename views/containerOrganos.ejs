@@ -48,6 +48,12 @@
         <div>
             <div><a href="/organos" class="text-white"><p>Volver</p></a></div>
             <h1 class="text-white text-center my-4">{{nombre.toUpperCase()}}</h1>
+                <div class="text-center">
+                    <a :href="ruta3D" style="color:#F2C94C" @click="_setMode('atlas')" class="d-md-block d-none">Modo Vista
+                        3D</a>
+                    <a :href="ruta3D"  style="color:#F2C94C ;font-size: 10px;" @click="_setMode('atlas')"
+                        class="d-md-none">Modo Vista 3D</a>
+                </div>
             <div class="d-none d-md-block">
                 <div class="row my-3">
                     <div v-for="parte,index in partes" class="col-4 my-2  d-grid gap-2 ">
@@ -83,6 +89,7 @@
                         class="d-md-none">Modo Vista Atlas</a>
                 </div>
 
+
             </div>
             <div class="row justify-content-center" v-if="!laminaMode">
                 <div class="col-12" id="imageContainer">
@@ -93,6 +100,9 @@
                 </div>
 
             </div>
+
+         
+
             <div class="row justify-content-center" v-if="laminaMode">
                 <div class="col-12" id="imageContainer">
                     <img style="height: auto; width: 100%;" :src="sourceAtlas">
@@ -151,47 +161,6 @@
         color: white;
     }
 
-    .lds-ring {
-        display: inline-block;
-        position: relative;
-        width: 80px;
-        height: 80px;
-    }
-
-    .lds-ring div {
-        box-sizing: border-box;
-        display: block;
-        position: absolute;
-        width: 64px;
-        height: 64px;
-        margin: 8px;
-        border: 8px solid #fff;
-        border-radius: 50%;
-        animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-        border-color: #fff transparent transparent transparent;
-    }
-
-    .lds-ring div:nth-child(1) {
-        animation-delay: -0.45s;
-    }
-
-    .lds-ring div:nth-child(2) {
-        animation-delay: -0.3s;
-    }
-
-    .lds-ring div:nth-child(3) {
-        animation-delay: -0.15s;
-    }
-
-    @keyframes lds-ring {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        100% {
-            transform: rotate(360deg);
-        }
-    }
 </style>
 
 </html>

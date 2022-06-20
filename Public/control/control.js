@@ -15,11 +15,13 @@ const contenedorLamina = new Vue({
         lamina:false,
         loading:false,
         organo:"",
-        nameShow:true
+        nameShow:true,
+        ruta3D:""
 
     },
     mounted(){
      this.organo= this.obtenerParametroRuta("organo")
+     this.ruta3D="/3D?organo="+this.organo
       this.getPartes(this.organo)
     },
     methods:{
@@ -35,7 +37,7 @@ const contenedorLamina = new Vue({
         return result;
       },
       getPartes: async function(organo){
-          const dataRaw= await axios.get("http://atlascanino.uce.edu.ec/api/v1/getOrgano/"+organo)
+          const dataRaw= await axios.get("http://localhost/api/v1/getOrgano/"+organo)
           this.partes=dataRaw.data[0].partes
           this.nombre=dataRaw.data[0].nombre
       },

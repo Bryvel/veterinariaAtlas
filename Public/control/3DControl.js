@@ -3,46 +3,39 @@ import * as THREE from 'three';
 
 import { OrbitControls } from '/three.js/OrbitControls.js';
 import { GLTFLoader } from '/three.js/GLTFLoader.js';
-import { RoomEnvironment } from '/three.js/RoomEnvironment.js';
+import { CSS2DRenderer, CSS2DObject } from '/three.js/CSS2DRenderer.js';
 
-let camera, scene, renderer;
+
+let camera, scene, renderer, labelRenderer;
 let cameraControls;
-let ambientLight, light, light2, light3;
+const container = document.createElement('div');
+document.getElementById("Viewer").appendChild(container);
 
-
+const canvasWidth = window.innerWidth;
+const canvasHeight = window.innerHeight;
+const loader = new GLTFLoader();
 
 init();
 render();
 
-
 function init() {
 
-
-
-
-    const container = document.createElement('div');
-    document.getElementById("Viewer").appendChild(container);
-
-    const canvasWidth = window.innerWidth;
-    const canvasHeight = window.innerHeight;
-    const material = new THREE.MeshStandardMaterial();
-    const loader = new GLTFLoader();
     // CAMERA
-    camera = new THREE.PerspectiveCamera(1, window.innerWidth / window.innerHeight, 0.1, 2000);
+    camera = new THREE.PerspectiveCamera(1, window.innerWidth / window.innerHeight, 0.1, 1000);
     camera.position.z = 100;
     camera.position.y = 25;
     camera.position.x = 25
 
-      // scene itself
-      scene = new THREE.Scene();
+    // scene itself
+    scene = new THREE.Scene();
 
     // LIGHTS
-    const ambientLight = new THREE.AmbientLight( 0xffffff, 1.2);
-    scene.add( ambientLight );
+    const ambientLight = new THREE.AmbientLight(0xffffff, 1.7);
+    scene.add(ambientLight);
 
-    light = new THREE.DirectionalLight(0xFFFFFF, 1.3 );
+    const light = new THREE.DirectionalLight(0xFFFFFF, 1.40);
     light.position.set(0.32, 0.39, -10);
-    scene.add( light );
+    scene.add(light);
 
     const pointLight = new THREE.PointLight(0xffffff, 1);
     camera.add(pointLight);
@@ -52,12 +45,20 @@ function init() {
     renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.physicallyCorrectLights = true
     renderer.shadowMap.enabled = true
-    renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1;
     renderer.setSize(canvasWidth, canvasHeight);
     container.appendChild(renderer.domElement);
     renderer.outputEncoding = THREE.sRGBEncoding;
 
+    labelRenderer = new CSS2DRenderer()
+    labelRenderer.setSize(window.innerWidth, window.innerHeight)
+    labelRenderer.domElement.style.position = 'absolute'
+    labelRenderer.domElement.style.top = '0px'
+    labelRenderer.domElement.style.pointerEvents = 'none'
+    container.appendChild(labelRenderer.domElement)
+    
+
+  
 
     // EVENTS
     window.addEventListener('resize', onWindowResize);
@@ -65,52 +66,8 @@ function init() {
     // CONTROLS
     cameraControls = new OrbitControls(camera, renderer.domElement);
     cameraControls.addEventListener('change', render);
-
-    const environment = new RoomEnvironment();
-    const pmremGenerator = new THREE.PMREMGenerator(renderer);
-
-    loader.load(
-        // resource URL
-        '/3D/encefalo/Pruebas.gltf',
-        // called when the resource is loaded
-        function (gltf) {
-
-            scene.add(gltf.scene);
-
-            gltf.animations; // Array<THREE.AnimationClip>
-            gltf.scene; // THREE.Group
-            gltf.scenes; // Array<THREE.Group>
-            gltf.cameras; // Array<THREE.Camera>
-            gltf.asset; // Object
-
-        },
-        // called while loading is progressing
-        function (xhr) {
-
-            console.log((xhr.loaded / xhr.total * 100) + '% loaded');
-
-        },
-        // called when loading has errors
-        function (error) {
-
-            console.log('An error happened');
-
-        }
-    );
-
-
-  
-    
-    const onProgress = function (xhr) {
-
-        if (xhr.lengthComputable) {
-
-            const percentComplete = xhr.loaded / xhr.total * 100;
-            console.log(Math.round(percentComplete, 2) + '% downloaded');
-
-        }
-
-    };
+    cameraControls.minDistance = 50;
+    cameraControls.maxDistance = 150;
 
 }
 
@@ -121,24 +78,102 @@ function onWindowResize() {
 
     renderer.setSize(canvasWidth, canvasHeight);
 
+    labelRenderer.setSize(canvasWidth, canvasHeight);
+
     camera.aspect = canvasWidth / canvasHeight;
     camera.updateProjectionMatrix();
 
     render();
 
+
 }
 
 function render() {
 
+    labelRenderer.render(scene, camera);
     renderer.render(scene, camera);
+
 
 }
 
 function animate() {
     requestAnimationFrame(animate);
     renderer.render(scene, camera);
+    labelRenderer.render(scene, camera);
 };
 
-animate();
+const loader3D = new Vue({
+    el: "#controlador3D",
+    data: {
+        organo: "",
+        modelo: ""
+    },
+    mounted() {
+       this.organo=this.obtenerParametroRuta("organo")
+       this.modelo=this.obtenerParametroRuta("modelo")
+       this._charge3D(this.organo,this.modelo);
+
+        },
+    
+    methods: {
+        _chargeData: function(organo,modelo){
+          this.organo=organo;
+          this.modelo=modelo;
+                },
+        _charge3D: function (organo, modelo) {
+            loader.load(
+                // resource URL
+                '/3D/' + organo + '/Modelos/' + modelo + '.gltf',
+                // called when the resource is loaded
+                function (gltf) {
+                      
+                   scene.add(gltf.scene)
+                   const moonMassDiv = document.createElement('div');
+                   moonMassDiv.className = 'label';
+                   moonMassDiv.textContent = '7.342e22 kg';
+                   moonMassDiv.style.marginTop = '-1em';
+               
+                   const moonMassLabel = new CSS2DObject(moonMassDiv);
+                   moonMassLabel.position.set(0.0,0.0, 0.0);
+                   scene.add(moonMassLabel);
+                   moonMassLabel.layers.set( 0);
+
+               
+
+                },
+                // called while loading is progressing
+                function (xhr) {
+
+                    console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+
+                },
+                // called when loading has errors
+                function (error) {
+
+                    console.log('An error happened');
+
+                }
+            );
+            animate();
+
+        },
+        obtenerParametroRuta: function (nombreParametro) {
+            let result = "";
+            let tmp = [];
+            let items = location.search.substr(1).split("&");
+            for (let index = 0; index < items.length; index++) {
+                tmp = items[index].split("=");
+                if (tmp[0] === nombreParametro) result = decodeURIComponent(tmp[1]);
+            }
+            return result;
+        },
+
+    }
+
+})
+
+
+
+
 
 

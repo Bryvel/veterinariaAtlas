@@ -42,7 +42,7 @@ router.get('/organos/container',async (req,res)=>{
     res.render('containerOrganos')
 })
 
-router.get('/3D/pruebas',async (req,res)=>{
+router.get('/3D',async (req,res)=>{
     
     res.render('3DContainer')
 })
