@@ -1,0 +1,44 @@
+.label {
+    color: #FFF;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding: 2px;
+    
+}
+.verde{
+    background: rgba(122, 255, 105, 0.3);
+}
+.azul{
+    background: rgba(105, 120, 255, 0.3);
+}
+.amarillo{
+    background: rgba(251, 255, 38, 0.3);
+}
+.fuxia{
+    background: rgba(250, 105, 255, 0.3);
+}
+.naranja{
+    background: rgba(238, 200, 97, 0.3);
+}
+.rojo{
+    background: rgba(255, 105, 105, 0.3);
+}
+.celeste{
+    background: rgba(105, 255, 235, 0.3);
+}
+.turquesa{
+    background: rgba(105, 255, 198, 0.3);
+}
+.rosa{
+    background: rgba(255, 174, 244, 0.3);
+}
+.verde-limon{
+    background: rgba(211, 255, 53, 0.3);
+}
+.morado{
+    background: rgba(183, 0, 255, 0.3);
+}
+.gris{
+    background: rgba(69, 69, 70, 0.3);
+}
+

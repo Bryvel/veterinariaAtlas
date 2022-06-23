@@ -56,9 +56,9 @@ function init() {
     labelRenderer.domElement.style.top = '0px'
     labelRenderer.domElement.style.pointerEvents = 'none'
     container.appendChild(labelRenderer.domElement)
-    
 
-  
+
+
 
     // EVENTS
     window.addEventListener('resize', onWindowResize);
@@ -109,36 +109,33 @@ const loader3D = new Vue({
         modelo: ""
     },
     mounted() {
-       this.organo=this.obtenerParametroRuta("organo")
-       this.modelo=this.obtenerParametroRuta("modelo")
-       this._charge3D(this.organo,this.modelo);
+        this.organo = this.obtenerParametroRuta("organo")
+        this.modelo = this.obtenerParametroRuta("modelo")
+        this._charge3D(this.organo, this.modelo);
+
+
+    },
+
+    methods: {
+        _chargeData: function (organo, modelo) {
+            this.organo = organo;
+            this.modelo = modelo;
 
         },
-    
-    methods: {
-        _chargeData: function(organo,modelo){
-          this.organo=organo;
-          this.modelo=modelo;
-                },
-        _charge3D: function (organo, modelo) {
+        _charge3D: async function (organo, modelo) {
+            let annotations = {}
             loader.load(
                 // resource URL
                 '/3D/' + organo + '/Modelos/' + modelo + '.gltf',
                 // called when the resource is loaded
                 function (gltf) {
-                      
-                   scene.add(gltf.scene)
-                   const moonMassDiv = document.createElement('div');
-                   moonMassDiv.className = 'label';
-                   moonMassDiv.textContent = '7.342e22 kg';
-                   moonMassDiv.style.marginTop = '-1em';
-               
-                   const moonMassLabel = new CSS2DObject(moonMassDiv);
-                   moonMassLabel.position.set(0.0,0.0, 0.0);
-                   scene.add(moonMassLabel);
-                   moonMassLabel.layers.set( 0);
 
-               
+
+                   
+                    scene.add(gltf.scene)
+
+                    
+                
 
                 },
                 // called while loading is progressing
@@ -154,6 +151,28 @@ const loader3D = new Vue({
 
                 }
             );
+                   const labelDownload = new XMLHttpRequest()
+                   labelDownload.open('GET', '/3D/' + organo + '/data/' + modelo + '.json')
+                   labelDownload.onreadystatechange = function() {
+                        if (this.readyState ===4 ) {
+                            annotations = JSON.parse(labelDownload.responseText)
+                            console.log(annotations)
+                            Object.keys(annotations).forEach((a) =>{
+                                const labelDiv = document.createElement('div');
+                                labelDiv.className = 'label '+annotations[a].Color;
+                                labelDiv.textContent = annotations[a].label;
+                                labelDiv.style.marginTop = '-1em';
+            
+                                const parteLabel = new CSS2DObject(labelDiv);
+                                parteLabel.position.set(annotations[a].Pos.x,annotations[a].Pos.y, annotations[a].Pos.z);
+                                scene.add(parteLabel);
+                                
+                            })
+        
+                        }
+                    };
+                    labelDownload.send()
+
             animate();
 
         },
