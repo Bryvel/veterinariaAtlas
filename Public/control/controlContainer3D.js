@@ -3,8 +3,9 @@ const contenedorLamina = new Vue({
     data: {
         organo: "",
         title: "",
-        source:"",
-        options:"",
+        source: "",
+        options: "",
+        model: ""
     },
     mounted() {
         this.organo = this.obtenerParametroRuta("organo")
@@ -20,21 +21,36 @@ const contenedorLamina = new Vue({
 
         }
     },
- methods:{
-    _charge3D: function(organo,modelo){
-        this.source="/3D/"+organo+"/Contenedores/"+modelo+".html?organo="+organo+"&modelo="+modelo
-        switch (modelo) {
-            case "encefaloBase":
-                this.options = "encefaloBase"
-                break;
-            case "encefaloCorte":
-                this.options = "encefaloCorte"
-   
+    methods: {
+        _charge3D: function (organo, modelo) {
+            this.source = "/3D/" + organo + "/Contenedores/" + modelo + ".html?organo=" + organo + "&modelo=" + modelo
+            switch (modelo) {
+                case "encefaloBase":
+                    this.options = "encefaloBase"
+                    this.model = " Modelo Base"
+                    break;
+                case "encefaloCorte":
+                    this.options = "encefaloCorte"
+                    this.model = " Corte plano medio"
+                    break;
+                case "encefaloBasePartes1":
+                    this.model = " Modelo Base - Cerébro, cerebelo y tallo encefálico"
+                    break;
+                case "encefaloBasePartes2":
+                    this.model = " Modelo Base - Surcos y cincunvoluciones cerebrales"
+                    break;
+                case "encefaloBasePartes3":
+                    this.model = " Modelo Base - Estructuras del encéfalo"
+                    break;
+                case "encefaloCortePartes1":
+                    this.model = " Corte plano medio - Estructuras encéfalo "
+                    break;
 
-        }
+
+            }
 
 
-    },
+        },
         obtenerParametroRuta: function (nombreParametro) {
             let result = "";
             let tmp = [];
