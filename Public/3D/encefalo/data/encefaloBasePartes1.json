@@ -42,7 +42,7 @@
       "y": -0.04,
       "z": -0.35
     },
-    "Color": "azul"
+    "Color": "verde"
   },
   {
     "label": "Tallo encefálico",
@@ -51,7 +51,7 @@
       "y": -0.05,
       "z": -0.6
     },
-    "Color": "naranja"
+    "Color": "amarillo"
   },
   {
     "label": "Bulbo olfatorio",

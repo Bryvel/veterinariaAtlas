@@ -47,7 +47,7 @@
     <div id="controlador3D" class="container-fluid">
         <div><a href="/organos" class="text-white mt-4 ml-5"><p>Volver</p></a></div>
         <h1 class="text-white text-center my-4">{{title}}</h1>
-        <div class="col-6 mx-auto ">
+        <div class="col-12 col-md-8 mx-auto ">
             <div class="row my-3">
                 <div class="col-12 col-md-4 my-2  d-grid gap-2 ">
                     <div v-if="organo=='encefalo'">
@@ -60,12 +60,16 @@
                 <div class="col-12 col-md-8 my-2  d-grid gap-2 ">
                     <div v-if="options">
                         <div v-if="options=='encefaloBase'">
-                    <button type="button" class="btn btn-block btn-light p-2 text-center"
+                    <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
                         style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes1')">Cerébro, cerebelo y tallo encefálico </button>
-                        <button type="button" class="btn btn-block btn-light p-2 text-center"
-                        style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes2')"> Surcos y cincunvoluciones cerebrales </button>
-                        <button type="button" class="btn btn-block btn-light p-2 text-center"
+                        <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
+                        style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes2')">Cincunvoluciones cerebrales </button>
+                        <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
+                        style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes4')">Surcos cerebrales </button>
+                        <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
                         style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes3')"> Estructuras del encéfalo</button>
+                        <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
+                        style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes5')"> Estructuras del encéfalo (vista dorsal)</button>
                         </div>
                         <div v-if="options=='encefaloCorte'">
                             <button type="button" class="btn btn-block btn-light p-2 text-center"
