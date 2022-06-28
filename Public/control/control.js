@@ -37,7 +37,7 @@ const contenedorLamina = new Vue({
         return result;
       },
       getPartes: async function(organo){
-          const dataRaw= await axios.get("http://localhost/api/v1/getOrgano/"+organo)
+          const dataRaw= await axios.get("http://atlascanino.uce.edu.ec/api/v1/getOrgano/"+organo)
           this.partes=dataRaw.data[0].partes
           this.nombre=dataRaw.data[0].nombre
       },
