@@ -5,7 +5,9 @@ const contenedorLamina = new Vue({
         title: "",
         source: "",
         options: "",
-        model: ""
+        model: "",
+        srcPartes: "",
+        leyenda: ""
     },
     mounted() {
         this.organo = this.obtenerParametroRuta("organo")
@@ -15,6 +17,7 @@ const contenedorLamina = new Vue({
                 break;
             case "rinon":
                 this.title = "Riñón"
+                break;
             case "corazon":
                 this.title = "Corazón"
                 break;
@@ -28,29 +31,55 @@ const contenedorLamina = new Vue({
                 case "encefaloBase":
                     this.options = "encefaloBase"
                     this.model = " Modelo Base"
+                    this.leyenda = false
                     break;
                 case "encefaloCorte":
                     this.options = "encefaloCorte"
                     this.model = " Corte plano medio"
+                    this.leyenda = false
                     break;
                 case "encefaloBasePartes1":
                     this.model = " Modelo Base - Cerébro, cerebelo y tallo encefálico"
+                    this.leyenda = false
                     break;
                 case "encefaloBasePartes2":
                     this.model = " Modelo Base - Surcos y cincunvoluciones cerebrales"
+                    this.leyenda = false
                     break;
                 case "encefaloBasePartes3":
                     this.model = " Modelo Base - Estructuras del encéfalo"
+                    this.leyenda = false
                     break;
                 case "encefaloCortePartes1":
                     this.model = " Corte plano medio - Estructuras encéfalo "
+                    this.leyenda = false
                     break;
+                case "rinonBase":
+                    this.options = "rinonBase"
+                    this.model = "Corte plano medio"
+                    this.leyenda = false
+                    break;
+                case "rinonBasePartes1":
+                    this.sourcePartes = "/3D/" + organo + "/Partes/Partes1.jpg"
+                    this.options = "rinonBase"
+                    this.model = "Estructuras externas del riñón"
+                    this.leyenda = true
+                    break;
+                case "rinonBasePartes2":
+                    this.sourcePartes = "/3D/" + organo + "/Partes/Partes2.jpg"
+                    this.options = "rinonBase"
+                    this.model = "Estructuras internas del riñón"
+                    this.leyenda = true
+                    break;
+
+
 
 
             }
 
 
         },
+
         obtenerParametroRuta: function (nombreParametro) {
             let result = "";
             let tmp = [];

@@ -6,6 +6,7 @@ import { GLTFLoader } from '/three.js/GLTFLoader.js';
 import { CSS2DRenderer, CSS2DObject } from '/three.js/CSS2DRenderer.js';
 
 
+
 let camera, scene, renderer, labelRenderer;
 let cameraControls;
 const container = document.createElement('div');
@@ -56,7 +57,6 @@ function init() {
     labelRenderer.domElement.style.top = '0px'
     labelRenderer.domElement.style.pointerEvents = 'none'
     container.appendChild(labelRenderer.domElement)
-
 
 
 
@@ -176,6 +176,7 @@ const loader3D = new Vue({
             animate();
 
         },
+      
         obtenerParametroRuta: function (nombreParametro) {
             let result = "";
             let tmp = [];

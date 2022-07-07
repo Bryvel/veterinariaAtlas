@@ -45,53 +45,93 @@
         </nav>
     </div>
     <div id="controlador3D" class="container-fluid">
-        <div><a href="/organos" class="text-white mt-4 ml-5"><p>Volver</p></a></div>
+        <div><a href="/organos" class="text-white mt-4 ml-5">
+                <p>Volver</p>
+            </a></div>
         <h1 class="text-white text-center my-4">{{title}}</h1>
         <div class="col-12 col-md-8 mx-auto ">
             <div class="row my-3">
                 <div class="col-12 col-md-4 my-2  d-grid gap-2 ">
                     <div v-if="organo=='encefalo'">
-                    <button type="button" class="btn btn-block btn-light p-2 text-center"
-                        style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBase')">Modelo Base</button>
-                        <button type="button" class="btn btn-block btn-light p-2 text-cente"
-                        style="font-size: 13px;" @click="_charge3D('encefalo','encefaloCorte')">Corte plano medio</button>
+                        <button type="button" class="btn btn-block btn-light p-2 text-center" style="font-size: 13px;"
+                            @click="_charge3D('encefalo','encefaloBase')">Modelo Base</button>
+                        <button type="button" class="btn btn-block btn-light p-2 text-center" style="font-size: 13px;"
+                            @click="_charge3D('encefalo','encefaloCorte')">Corte plano medio</button>
+                    </div>
+                    <div v-if="organo=='rinon'">
+                        <button type="button" class="btn btn-block btn-light p-2 text-center" style="font-size: 13px;"
+                            @click="_charge3D('rinon','rinonBase')">Corte plano medio</button>
                     </div>
                 </div>
                 <div class="col-12 col-md-8 my-2  d-grid gap-2 ">
                     <div v-if="options">
                         <div v-if="options=='encefaloBase'">
-                    <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
-                        style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes1')">Cerébro, cerebelo y tallo encefálico </button>
-                        <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
-                        style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes2')">Cincunvoluciones cerebrales </button>
-                        <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
-                        style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes4')">Surcos cerebrales </button>
-                        <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
-                        style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes3')"> Estructuras del encéfalo</button>
-                        <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
-                        style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes5')"> Estructuras del encéfalo (vista dorsal)</button>
+                            <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
+                                style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes1')">Cerébro,
+                                cerebelo y tallo encefálico </button>
+                            <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
+                                style="font-size: 13px;"
+                                @click="_charge3D('encefalo','encefaloBasePartes2')">Cincunvoluciones cerebrales
+                            </button>
+                            <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
+                                style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes4')">Surcos
+                                cerebrales </button>
+                            <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
+                                style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes3')">
+                                Estructuras del encéfalo</button>
+                            <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
+                                style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes5')">
+                                Estructuras del encéfalo (vista dorsal)</button>
                         </div>
                         <div v-if="options=='encefaloCorte'">
                             <button type="button" class="btn btn-block btn-light p-2 text-center"
-                                style="font-size: 13px;" @click="_charge3D('encefalo','encefaloCortePartes1')">Estructuras encéfalo - corte plano medio</button>
-                         </div>
+                                style="font-size: 13px;"
+                                @click="_charge3D('encefalo','encefaloCortePartes1')">Estructuras encéfalo - corte plano
+                                medio</button>
+                        </div>
+                        <div v-if="options=='rinonBase'">
+                            <button type="button" class="btn btn-block btn-light p-2 text-center"
+                                style="font-size: 13px;" @click="_charge3D('rinon','rinonBasePartes1')">Estructuras
+                                externas del riñón</button>
+                            <button type="button" class="btn btn-block btn-light p-2 text-center"
+                                style="font-size: 13px;"
+                                @click="_charge3D('rinon','rinonBasePartes2')">Estructuras internas del
+                                riñón</button>
+                        </div>
                     </div>
                 </div>
                 <h2 class="text-white text-center mt-3">{{model}}</h2>
             </div>
-          
+
 
         </div>
-        <div class="col-12 container " id="imageContainer">
-            <div class="ratio" style="--bs-aspect-ratio: 80%;">
-                <iframe style="width: 100%; height: 100%;" :src="source" id="contenedor"
-                    style="border:none"></iframe>
+        <div v-if="!leyenda">
+            <div class="col-12 container " id="imageContainer">
+                <div class="ratio" style="--bs-aspect-ratio: 80%;">
+                    <iframe style="width: 100%; height: 100%;" :src="source" id="contenedor"
+                        style="border:none"></iframe>
+                </div>
             </div>
         </div>
 
+        <div v-if="leyenda" class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 d-flex justify-content-end">
+                    <img :src="sourcePartes" style="height:30%">
+                </div>
+                <div class="col-12 col-md-9  " id="imageContainer">
+                    <div class="ratio" style="--bs-aspect-ratio: 80%;">
+                        <iframe style="width: 100%; height: 100%;" :src="source" id="contenedor"
+                            style="border:none"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
-    
+
 
     <script src="/control/controlContainer3D.js"></script>
     <footer class="text-center text-lg-start" style="background-color: #333333;">
@@ -162,15 +202,15 @@
         color: white;
     }
 
-  
-  
 
-.label {
-				color: #FFF;
-				font-family: sans-serif;
-				padding: 2px;
-				background: rgba( 0, 0, 0, .6 );
-			}
+
+
+    .label {
+        color: #FFF;
+        font-family: sans-serif;
+        padding: 2px;
+        background: rgba(0, 0, 0, .6);
+    }
 </style>
 
 </html>
