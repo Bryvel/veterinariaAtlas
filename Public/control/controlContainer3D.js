@@ -71,6 +71,31 @@ const contenedorLamina = new Vue({
                     this.model = "Estructuras internas del riñón"
                     this.leyenda = true
                     break;
+                case "corazonBase":
+                    this.options = "corazonBase"
+                    this.model = "Modelo Base"
+                    this.leyenda = false
+                    break;
+                case "corazonBasePartes1":
+                    this.options = "corazonBase"
+                    this.model = "Corazón cara auricular: compartimentos, surcos y grandes vasos"
+                    this.leyenda = false
+                    break;
+                case "corazonBasePartes2":
+                    this.options = "corazonBase"
+                    this.model = "Corazón cara atrial: compartimentos, surcos y grandes vasos"
+                    this.leyenda = false
+                    break;
+                case "corazonCorte":
+                    this.options = "corazonCorte"
+                    this.model = "Corte plano medio"
+                    this.leyenda = false
+                    break;
+                case "corazonCortePartes1":
+                    this.options = "corazonCorte"
+                    this.model = "Corazón (corte sagital): compartimentos y estructuras"
+                    this.leyenda = false
+                    break;
 
 
 

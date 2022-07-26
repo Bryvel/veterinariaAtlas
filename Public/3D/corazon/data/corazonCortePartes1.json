@@ -1,0 +1,104 @@
+[
+   
+    {
+      "label": "Ventrículo izquierdo",
+      "Pos": {
+        "x": -0.20,
+        "y": -0.18,
+        "z": -0.0
+      },
+      "Color": "naranja"
+    },
+    {
+        "label": "Septo interventricular ",
+        "Pos": {
+          "x": -0.10,
+          "y": -0.05,
+          "z": -0.0
+        },
+        "Color": "amarillo"
+      },
+    {   
+        "label": "Aurícula izquierda ",
+        "Pos": {
+            "x": -0.10,
+            "y": 0.25,
+            "z": -0.1
+        },
+        "Color": "rojo"
+      },
+      {
+        "label": "Ventrículo derecho",
+        "Pos": {
+          "x": 0.08,
+          "y": -0.33,
+          "z": -0.0
+        },
+        "Color": "morado"
+      },
+      {
+        "label": "Cuerdas tendinosas",
+        "Pos": {
+          "x": -0.05,
+          "y": -0.20,
+          "z": -0.05
+        },
+        "Color": "naranja"
+      },
+      {
+        "label": "Aurícula derecha",
+        "Pos": {
+          "x": 0.15,
+          "y": 0.12,
+          "z": 0.05
+        },
+        "Color": "azul"
+      },
+      {   
+        "label": "Arteria pulmonar",
+        "Pos": {
+            "x": 0.1,
+            "y": 0.26,
+            "z": 0.1
+        },
+        "Color": "gris"
+      },
+      {   
+        "label": "Tronco pulmonar",
+        "Pos": {
+            "x": 0.25,
+            "y": 0.20,
+            "z": 0.1
+        },
+        "Color": "gris"
+      },
+      {   
+        "label": "Aorta ",
+        "Pos": {
+            "x": 0.0,
+            "y": 0.12,
+            "z": 0.1
+        },
+        "Color": "gris"
+      },
+      {   
+        "label": "Válvula tricúspide",
+        "Pos": {
+            "x": -0.1,
+            "y": 0.12,
+            "z": 0.0
+        },
+        "Color": "rosa"
+      },
+      {   
+        "label": "Válvula mitral",
+        "Pos": {
+            "x": 0.1,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "Color": "verde"
+      }
+
+
+  ]

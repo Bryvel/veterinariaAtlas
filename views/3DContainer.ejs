@@ -62,6 +62,12 @@
                         <button type="button" class="btn btn-block btn-light p-2 text-center" style="font-size: 13px;"
                             @click="_charge3D('rinon','rinonBase')">Corte plano medio</button>
                     </div>
+                    <div v-if="organo=='corazon'">
+                        <button type="button" class="btn btn-block btn-light p-2 text-center" style="font-size: 13px;"
+                            @click="_charge3D('corazon','corazonBase')">Modelo Base</button>
+                            <button type="button" class="btn btn-block btn-light p-2 text-center" style="font-size: 13px;"
+                            @click="_charge3D('corazon','corazonCorte')">Corte plano medio</button>
+                    </div>
                 </div>
                 <div class="col-12 col-md-8 my-2  d-grid gap-2 ">
                     <div v-if="options">
@@ -97,6 +103,19 @@
                                 style="font-size: 13px;"
                                 @click="_charge3D('rinon','rinonBasePartes2')">Estructuras internas del
                                 riñón</button>
+                        </div>
+                        <div v-if="options=='corazonBase'">
+                            <button type="button" class="btn btn-block btn-light p-2 mx-2 text-center"
+                                style="font-size: 13px;" @click="_charge3D('corazon','corazonBasePartes1')">Corazón cara auricular: compartimentos, surcos y grandes vasos
+                            </button><button type="button" class="btn btn-block btn-light p-2 text-center"
+                            style="font-size: 13px;" @click="_charge3D('corazon','corazonBasePartes2')">Corazón cara atrial: compartimentos, surcos y grandes vasos
+                        </button>
+                        </div>
+                        <div v-if="options=='corazonCorte'">
+                            <button type="button" class="btn btn-block btn-light p-2 text-center"
+                                style="font-size: 13px;"
+                                @click="_charge3D('corazon','corazonCortePartes1')">Corazón (corte sagital): compartimentos y estructuras
+                            </button>
                         </div>
                     </div>
                 </div>
