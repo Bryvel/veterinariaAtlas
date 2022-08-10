@@ -28,7 +28,7 @@
         "Color": "fuxia"
     },
     {
-        "label": "Fornix",
+        "label": "Fórnix",
         "Pos": {
             "x": 0,
             "y": -0.05,
@@ -54,15 +54,7 @@
         },
         "Color": "verde"
     },
-    {
-        "label": "Ventrículo lateral",
-        "Pos": {
-            "x": 0,
-            "y": -0.04,
-            "z": 0.17
-        },
-        "Color": "celeste"
-    },
+
     {
         "label": "Cuerpo (cuerpo calloso)",
         "Pos": {

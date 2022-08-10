@@ -10,7 +10,7 @@
       "Color": "celeste"
     },
     {
-        "label": "Surco interventricular paracoronal ",
+        "label": "Surco coronario",
         "Pos": {
           "x": -0.18,
           "y": 0.12,
@@ -37,7 +37,7 @@
         "Color": "rojo"
       },
       {
-        "label": "Surco interventricular paracoronal",
+        "label": "Surco interventricular subsinusal",
         "Pos": {
           "x": 0.1,
           "y": -0.18,
@@ -91,7 +91,7 @@
         "Color": "gris"
       },
       {
-        "label": "Carótida derecha",
+        "label": "Carótida izquierda",
         "Pos": {
             "x": -0.52,
             "y": 0.35,
@@ -100,7 +100,7 @@
         "Color": "gris"
       },
       {
-        "label": "Subclavia derecha",
+        "label": "Carótida derecha",
         "Pos": {
           "x": -0.51,
           "y": 0.28,
@@ -109,7 +109,7 @@
         "Color": "gris"
       },
       {
-        "label": "Carótida izquierda",
+        "label": "Subclavia derecha",
         "Pos": {
             "x": -0.52,
             "y": 0.42,

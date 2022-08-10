@@ -82,7 +82,7 @@
         "Color": "gris"
       },
       {
-        "label": "Carótida derecha",
+        "label": "Carótida izquierda",
         "Pos": {
             "x": 0.52,
             "y": 0.35,
@@ -91,7 +91,7 @@
         "Color": "gris"
       },
       {
-        "label": "Subclavia derecha",
+        "label": "Carótida derecha",
         "Pos": {
           "x": 0.51,
           "y": 0.28,
@@ -100,7 +100,7 @@
         "Color": "gris"
       },
       {
-        "label": "Carótida izquierda",
+        "label": "Subclavia derecha",
         "Pos": {
             "x": 0.52,
             "y": 0.42,

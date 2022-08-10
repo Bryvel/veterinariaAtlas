@@ -49,6 +49,9 @@
                 <p>Volver</p>
             </a></div>
         <h1 class="text-white text-center my-4">{{title}}</h1>
+        <div class="text-center col-8 mx-auto my-4" >
+            <p class="text-white py-2" style="border: white 1px solid; border-radius:5px">Usa el cursor para mover el objeto 3D en 360 grados. <br>Da click en los botones numerados para observar el órgano con sus estructuras rotuladas.</p>
+        </div>
         <div class="col-12 col-md-8 mx-auto ">
             <div class="row my-3">
                 <div class="col-12 col-md-4 my-2  d-grid gap-2 ">
@@ -65,50 +68,49 @@
                     <div v-if="organo=='corazon'">
                         <button type="button" class="btn btn-block btn-light p-2 text-center" style="font-size: 13px;"
                             @click="_charge3D('corazon','corazonBase')">Modelo Base</button>
-                            <button type="button" class="btn btn-block btn-light p-2 text-center" style="font-size: 13px;"
-                            @click="_charge3D('corazon','corazonCorte')">Corte plano medio</button>
+                            
                     </div>
                 </div>
                 <div class="col-12 col-md-8 my-2  d-grid gap-2 ">
                     <div v-if="options">
                         <div v-if="options=='encefaloBase'">
                             <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
-                                style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes1')">Cerébro,
+                                style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes1')">1.Cerébro,
                                 cerebelo y tallo encefálico </button>
                             <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
                                 style="font-size: 13px;"
-                                @click="_charge3D('encefalo','encefaloBasePartes2')">Cincunvoluciones cerebrales
+                                @click="_charge3D('encefalo','encefaloBasePartes2')">2.Cincunvoluciones cerebrales
                             </button>
                             <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
-                                style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes4')">Surcos
+                                style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes4')">3.Surcos
                                 cerebrales </button>
                             <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
                                 style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes3')">
-                                Estructuras del encéfalo</button>
+                                4.Estructuras del encéfalo</button>
                             <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
                                 style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes5')">
-                                Estructuras del encéfalo (vista dorsal)</button>
+                                5.Estructuras del encéfalo (vista dorsal)</button>
                         </div>
                         <div v-if="options=='encefaloCorte'">
                             <button type="button" class="btn btn-block btn-light p-2 text-center"
                                 style="font-size: 13px;"
-                                @click="_charge3D('encefalo','encefaloCortePartes1')">Estructuras encéfalo - corte plano
+                                @click="_charge3D('encefalo','encefaloCortePartes1')">1.Estructuras encéfalo - corte plano
                                 medio</button>
                         </div>
                         <div v-if="options=='rinonBase'">
                             <button type="button" class="btn btn-block btn-light p-2 text-center"
-                                style="font-size: 13px;" @click="_charge3D('rinon','rinonBasePartes1')">Estructuras
+                                style="font-size: 13px;" @click="_charge3D('rinon','rinonBasePartes1')">1.Estructuras
                                 externas del riñón</button>
                             <button type="button" class="btn btn-block btn-light p-2 text-center"
                                 style="font-size: 13px;"
-                                @click="_charge3D('rinon','rinonBasePartes2')">Estructuras internas del
+                                @click="_charge3D('rinon','rinonBasePartes2')">2.Estructuras internas del
                                 riñón</button>
                         </div>
                         <div v-if="options=='corazonBase'">
                             <button type="button" class="btn btn-block btn-light p-2 mx-2 text-center"
-                                style="font-size: 13px;" @click="_charge3D('corazon','corazonBasePartes1')">Corazón cara auricular: compartimentos, surcos y grandes vasos
+                                style="font-size: 13px;" @click="_charge3D('corazon','corazonBasePartes1')">1.Corazón cara auricular: compartimentos, surcos y grandes vasos
                             </button><button type="button" class="btn btn-block btn-light p-2 text-center"
-                            style="font-size: 13px;" @click="_charge3D('corazon','corazonBasePartes2')">Corazón cara atrial: compartimentos, surcos y grandes vasos
+                            style="font-size: 13px;" @click="_charge3D('corazon','corazonBasePartes2')">2.Corazón cara atrial: compartimentos, surcos y grandes vasos
                         </button>
                         </div>
                         <div v-if="options=='corazonCorte'">
@@ -136,7 +138,12 @@
         <div v-if="leyenda" class="container">
             <div class="row">
                 <div class="col-12 col-md-3 d-flex justify-content-end">
+                    <div class="d-md-block d-none">
                     <img :src="sourcePartes" style="height:30%">
+                    </div>
+                    <div class="d-md-none d-block">
+                        <img :src="sourcePartes" style="width:100%">
+                        </div>
                 </div>
                 <div class="col-12 col-md-9  " id="imageContainer">
                     <div class="ratio" style="--bs-aspect-ratio: 80%;">

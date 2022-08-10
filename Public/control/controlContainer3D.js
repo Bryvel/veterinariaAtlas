@@ -6,7 +6,7 @@ const contenedorLamina = new Vue({
         source: "",
         options: "",
         model: "",
-        srcPartes: "",
+        sourcePartes: "",
         leyenda: ""
     },
     mounted() {
@@ -39,36 +39,50 @@ const contenedorLamina = new Vue({
                     this.leyenda = false
                     break;
                 case "encefaloBasePartes1":
-                    this.model = " Modelo Base - Cerébro, cerebelo y tallo encefálico"
-                    this.leyenda = false
+                    this.sourcePartes = "/3D/" + organo + "/Partes/Partes1.jpg"
+                    this.model = " 1.Modelo Base - Cerébro, cerebelo y tallo encefálico"
+                    this.leyenda = true
                     break;
                 case "encefaloBasePartes2":
-                    this.model = " Modelo Base - Surcos y cincunvoluciones cerebrales"
-                    this.leyenda = false
+                    this.sourcePartes = "/3D/" + organo + "/Partes/Partes2.jpg"
+                    this.model = " 2.Modelo Base - Circunvoluciones cerebrales"
+                    this.leyenda = true
                     break;
                 case "encefaloBasePartes3":
-                    this.model = " Modelo Base - Estructuras del encéfalo"
-                    this.leyenda = false
+                    this.sourcePartes = "/3D/" + organo + "/Partes/Partes4.jpg"
+                    this.model = " 3.Modelo Base - Surcos cerebrales"
+                    this.leyenda = true
+                    break;
+                case "encefaloBasePartes4":
+                    this.sourcePartes = "/3D/" + organo + "/Partes/Partes3.jpg"
+                    this.model = " 4.Modelo Base - Estructuras del encéfalo"
+                    this.leyenda = true
+                    break;
+                case "encefaloBasePartes5":
+                    this.sourcePartes = "/3D/" + organo + "/Partes/Partes5.jpg"
+                    this.model = " 5.Modelo Base - Estructuras del encéfalo (vista ventral)"
+                    this.leyenda = true
                     break;
                 case "encefaloCortePartes1":
-                    this.model = " Corte plano medio - Estructuras encéfalo "
-                    this.leyenda = false
+                    this.sourcePartes = "/3D/" + organo + "/Partes/Partes6.jpg"
+                    this.model = " 1.Corte plano medio - Estructuras encéfalo "
+                    this.leyenda = true
                     break;
                 case "rinonBase":
                     this.options = "rinonBase"
                     this.model = "Corte plano medio"
-                    this.leyenda = false
+                    this.leyenda = true
                     break;
                 case "rinonBasePartes1":
                     this.sourcePartes = "/3D/" + organo + "/Partes/Partes1.jpg"
                     this.options = "rinonBase"
-                    this.model = "Estructuras externas del riñón"
+                    this.model = "1.Estructuras externas del riñón"
                     this.leyenda = true
                     break;
                 case "rinonBasePartes2":
                     this.sourcePartes = "/3D/" + organo + "/Partes/Partes2.jpg"
                     this.options = "rinonBase"
-                    this.model = "Estructuras internas del riñón"
+                    this.model = "2.Estructuras internas del riñón"
                     this.leyenda = true
                     break;
                 case "corazonBase":
@@ -78,12 +92,12 @@ const contenedorLamina = new Vue({
                     break;
                 case "corazonBasePartes1":
                     this.options = "corazonBase"
-                    this.model = "Corazón cara auricular: compartimentos, surcos y grandes vasos"
+                    this.model = "1.Corazón cara auricular: compartimentos, surcos y grandes vasos"
                     this.leyenda = false
                     break;
                 case "corazonBasePartes2":
                     this.options = "corazonBase"
-                    this.model = "Corazón cara atrial: compartimentos, surcos y grandes vasos"
+                    this.model = "2.Corazón cara atrial: compartimentos, surcos y grandes vasos"
                     this.leyenda = false
                     break;
                 case "corazonCorte":

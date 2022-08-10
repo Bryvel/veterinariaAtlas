@@ -54,7 +54,7 @@
     "Color": "naranja"
   },
   {
-    "label": "Lóbulo Piriforme",
+    "label": "Lóbulo piriforme",
     "Pos": {
       "x": 0.14,
       "y": -0.28,
@@ -72,7 +72,7 @@
     "Color": "naranja"
   },
   {
-    "label": "Lóbulo Piriforme",
+    "label": "Lóbulo piriforme",
     "Pos": {
       "x": -0.14,
       "y": -0.28,
@@ -90,7 +90,7 @@
     "Color": "naranja"
   },
   {
-    "label": "Cuerpo trapezoideo",
+    "label": "Cuerpo trapezoide",
     "Pos": {
       "x": 0.12,
       "y": -0.2 ,
@@ -99,7 +99,7 @@
     "Color": "rojo"
   },
   {
-    "label": "Cuerpo trapezoideo",
+    "label": "Cuerpo trapezoide",
     "Pos": {
       "x": -0.12,
       "y": -0.2 ,
