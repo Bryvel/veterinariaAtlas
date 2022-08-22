@@ -1,0 +1,110 @@
+[
+  {
+    "label": "Cerebelo",
+    "Pos": {
+      "x": 0,
+      "y": 0.1,
+      "z": -0.35
+    },
+    "Color": "verde"
+  },
+  {
+    "label": "Médula oblonga",
+    "Pos": {
+      "x": 0,
+      "y": -0.1,
+      "z": -0.65
+    },
+    "Color": "amarillo"
+  },
+  {
+    "label": "Nervios ópticos",
+    "Pos": {
+      "x": 0,
+      "y": -0.28,
+      "z": 0.05
+    },
+    "Color": "celeste"
+  },
+  {
+    "label": "Puente",
+    "Pos": {
+      "x": 0,
+      "y": -0.31  ,
+      "z": -0.3
+    },
+    "Color": "rosa"
+  },
+  {
+    "label": "Bulbo olfatorio",
+    "Pos": {
+      "x": 0.1,
+      "y": -0.28,
+      "z": 0.48
+    },
+    "Color": "rojo"
+  },
+  {
+    "label": "Pedúnculo olfatorio",
+    "Pos": {
+      "x": 0.1,
+      "y": -0.28,
+      "z": 0.29
+    },
+    "Color": "naranja"
+  },
+  {
+    "label": "Lóbulo piriforme",
+    "Pos": {
+      "x": 0.14,
+      "y": -0.28,
+      "z": 0.1
+    },
+    "Color": "verde"
+  },
+  {
+    "label": "Pedúnculo olfatorio",
+    "Pos": {
+      "x": -0.1,
+      "y": -0.28,
+      "z": 0.29
+    },
+    "Color": "naranja"
+  },
+  {
+    "label": "Lóbulo piriforme",
+    "Pos": {
+      "x": -0.14,
+      "y": -0.28,
+      "z": 0.1
+    },
+    "Color": "verde"
+  },
+  {
+    "label": "Pirámides",
+    "Pos": {
+      "x": 0,
+      "y": -0.2 ,
+      "z": -0.5
+    },
+    "Color": "naranja"
+  },
+  {
+    "label": "Cuerpo trapezoide",
+    "Pos": {
+      "x": 0.12,
+      "y": -0.2 ,
+      "z": -0.4
+    },
+    "Color": "rojo"
+  },
+  {
+    "label": "Cuerpo trapezoide",
+    "Pos": {
+      "x": -0.12,
+      "y": -0.2 ,
+      "z": -0.4
+    },
+    "Color": "rojo"
+  }
+]

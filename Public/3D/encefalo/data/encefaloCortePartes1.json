@@ -1,0 +1,103 @@
+[
+    {
+        "label": "Hemisferio Izquierdo",
+        "Pos": {
+            "x": 0.15,
+            "y": 0.2,
+            "z": 0
+        },
+        "Color": "amarillo"
+    },
+    {
+        "label": "Adherencia intertalámica ",
+        "Pos": {
+            "x": 0,
+            "y": -0.15,
+            "z": 0.05
+        },
+        "Color": "gris"
+    },
+
+    {
+        "label": "Esplenio (cuerpo calloso)",
+        "Pos": {
+            "x": 0,
+            "y": 0.05,
+            "z": -0.05
+        },
+        "Color": "fuxia"
+    },
+    {
+        "label": "Fórnix",
+        "Pos": {
+            "x": 0,
+            "y": -0.05,
+            "z": 0.08
+        },
+        "Color": "naranja"
+    },
+    {
+        "label": "Fornix",
+        "Pos": {
+            "x": 0,
+            "y": -0.05,
+            "z": 0.08
+        },
+        "Color": "naranja"
+    },
+    {
+        "label": "Rodilla (cuerpo calloso)",
+        "Pos": {
+            "x": 0,
+            "y": -0.1,
+            "z": 0.25
+        },
+        "Color": "verde"
+    },
+
+    {
+        "label": "Cuerpo (cuerpo calloso)",
+        "Pos": {
+            "x": 0,
+            "y": 0,
+            "z": 0.17
+        },
+        "Color": "azul"
+    },
+    {
+        "label": "Árbol de la vida ",
+        "Pos": {
+            "x": 0,
+            "y": -0.06,
+            "z": -0.3
+        },
+        "Color": "morado"
+    },
+    {
+        "label": "Cerebelo (sustancia gris) ",
+        "Pos": {
+            "x": 0,
+            "y": 0.06,
+            "z": -0.28
+        },
+        "Color": "verde"
+    },
+    {
+        "label": "Puente",
+        "Pos": {
+            "x": 0,
+            "y":-0.2,
+            "z": -0.15
+        },
+        "Color": "rojo"
+    },
+    {
+        "label": "Bulbo olfatorio",
+        "Pos": {
+            "x": 0.1,
+            "y": -0.25,
+            "z": 0.52
+        },
+        "Color": "rojo"
+    }
+]
