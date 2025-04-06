@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Atlas Osteologia</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="/metodosCarga.js"></script>
+
+  <script src="/imageMapResizer.js"></script>
+
+
+  <link rel="stylesheet" href="/bootstrap.css">
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #6d6d6d; border-bottom-left-radius: 25px; border-bottom-right-radius: 25px;">
+    <div class="container-fluid">
+        <div class="row col-md-10 col-12 mx-auto">
+            <div class="col-md-1 col-12 d-md-block d-none">
+                <a class="navbar-brand">
+                    <img src="/ico/icon 2.png" width="60" height="60" class="d-inline-block align-top" alt="">
+                </a>
+            </div>
+            <div class="col-6 m-auto d-md-block d-none">
+                <p class="m-auto text-white h4 bold">UCE-VETERINARIA   </p>
+                <p class=" m-auto text-white h5">Laboratorio de Anatomía de Medicina Veterinaria</p>
+            </div>
+            <div class="col-5 row d-md-block d-none m-auto">
+                <div class="d-flex justify-content-end">
+                    <a class="nav-link h5 text-white" href="/">Inicio</a>
+                    <a class="nav-link h5 text-white" href="/huesos/Generalidades">Generalidades</a>
+                </div>
+            </div>
+            <div class="col-md-5 col-12 row d-md-none d-block m-auto">
+                <div class="d-flex justify-content-center">
+                    <a class="navbar-brand" >
+                        <img src="/ico/icon 2.png" width="60" height="60" class="d-inline-block align-top" alt="">
+                    </a>
+                    <a class="nav-link  text-white m-auto" href="/">Inicio</a>
+                    <a class="nav-link  text-white m-auto" href="/huesos/Generalidades">Generalidades</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-4 col-12 mx-auto ">
+        <h1 class="text-center">
+          <%=huesos[0].nombre%>
+        </h1>
+        <div id="listaDetalle">
+
+        </div>
+      </div>
+      <div class="col-xl-8" id="imageContainer">
+      <div class="embed-responsive embed-responsive-1by1">
+      <iframe class="embed-responsive-item" src=" " id="contenedor" style="border:none" class="contenedor"></iframe>
+      </div>
+    </div>
+    </div>
+
+</div>
+<div style="background-color: #6d6d6d; border-top-left-radius: 25px; border-top-right-radius: 25px;" class="d-block d-md-none">
+    <div class="col-12 m-auto text-center py-4">
+        <p class="m-auto text-white h4 bold">UCE-VETERINARIA   </p>
+        <p class=" m-auto text-white h5">Laboratorio de Anatomía de Medicina Veterinaria</p>
+    </div>
+</div>
+<div style="background-color: #6d6d6d; border-top-left-radius: 25px; border-top-right-radius: 25px;" class="d-none d-md-block">
+    <div class="container-fluid">
+        <div class="row col-md-9 col-12 m-auto">
+            <div class="col-md-6 col-12 row mx-auto mt-3">
+                <div class="col-3 my-auto mx-0 d-flex justify-content-end">
+                    <img src="/ico/icon 5.png" width="100">
+                </div>
+                <div class="col-9 text-left text-white m-auto">
+                    <p class="font-weight-bold ">Autores:</p>
+                    <p>Facultad Medicina Veterinaria y Zootecnia</p>
+                    <p>Verónica Estefani Alvear Sandoval</p>
+                    <p>MVZ. María del Carmen Revelo Cueva</p>
+                </div>
+
+            </div>
+            <div class="col-md-6 col-12 row mx-auto mt-3">
+                <div class="col-3 my-auto mx-0">
+                    <img src="/ico/icon 6.png" width="100">
+                </div>
+                <div class="col-9 text-left text-white m-auto">
+                    <p class="font-weight-bold ">Autores:</p>
+                    <p>Facultad de Ingeniería y Ciencias Aplicadas</p>
+                    <p>Bryan Sebastian Velasco Lopez</p>
+                    <p>Ing. César Morales Mejía</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<style type="text/css">
+  body {
+    background-color: black;
+  }
+
+  .list-group {
+
+    background-color: gray;
+  }
+
+  .responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #tipo{
+     margin: 1em;
+    
+   background-repeat: no-repeat;
+   background-position: center;
+   
+  }
+
+  
+  h1 {
+    color: white;
+    margin: 1em;
+  }
+
+
+
+  #page-content {
+    flex: 1 0 auto;
+  }
+
+  #sticky-footer {
+    flex-shrink: none;
+  }
+
+  
+
+#uce a img {
+    display : block;
+    margin : auto;
+}
+
+
+
+
+</style>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script >
+
+var listaPartes = <%- JSON.stringify( huesos[0].partes ); %>;
+var nombre=<%- JSON.stringify( huesos[0].nombre ); %>;
+console.log(listaPartes)
+CargarLista();
+clickLoop(nombre, listaPartes);
+cargarAtlas();
+cargarXray();
+
+</script>
+
+</html>

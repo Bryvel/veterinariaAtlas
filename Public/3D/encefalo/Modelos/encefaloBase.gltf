@@ -1,0 +1,517 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.8.19",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "lateral",
+            "rotation" : [
+                0.5,
+                0.5,
+                -0.5,
+                0.4999999701976776
+            ],
+            "scale" : [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "translation" : [
+                0,
+                0,
+                -0.3499999940395355
+            ]
+        },
+        {
+            "name" : "superior",
+            "rotation" : [
+                0,
+                0.7071068286895752,
+                0,
+                0.7071068286895752
+            ],
+            "scale" : [
+                0.5299999713897705,
+                1,
+                0.5199999809265137
+            ]
+        },
+        {
+            "name" : "frontal",
+            "rotation" : [
+                0,
+                0.7071067690849304,
+                0.7071068286895752,
+                5.338507946817117e-08
+            ],
+            "scale" : [
+                -0.5,
+                0.5,
+                -0.5
+            ]
+        },
+        {
+            "name" : "LATERAL 2",
+            "rotation" : [
+                0.5000000596046448,
+                -0.5000000596046448,
+                0.5000000596046448,
+                0.5
+            ],
+            "scale" : [
+                -0.29740118980407715,
+                0.29740118980407715,
+                0.29740118980407715
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Encefalo 1",
+            "scale" : [
+                0.22736388444900513,
+                0.22736388444900513,
+                0.22736388444900513
+            ],
+            "translation" : [
+                0.22690370678901672,
+                0.07182563096284866,
+                -0.017956411466002464
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "Emcefalo 2",
+            "scale" : [
+                -0.22736388444900513,
+                0.22736388444900513,
+                0.22736388444900513
+            ],
+            "translation" : [
+                -0.22628259658813477,
+                0.07182563096284866,
+                -0.017708737403154373
+            ]
+        },
+        {
+            "mesh" : 2,
+            "name" : "Arbol",
+            "scale" : [
+                0.0938306450843811,
+                0.0938306450843811,
+                0.0938306450843811
+            ],
+            "translation" : [
+                -0.006719971541315317,
+                0.026022501289844513,
+                -0.31821611523628235
+            ]
+        },
+        {
+            "mesh" : 3,
+            "name" : "Tallo",
+            "scale" : [
+                0.0849679708480835,
+                0.0849679708480835,
+                0.0849679708480835
+            ],
+            "translation" : [
+                0,
+                -0.1077384427189827,
+                -0.0750904306769371
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material.001",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5136363506317139
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Material.006",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Material",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Material.002",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 3
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Cube.004",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 1
+                }
+            ]
+        },
+        {
+            "name" : "Cube.005",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 8,
+                        "NORMAL" : 9,
+                        "TEXCOORD_0" : 10
+                    },
+                    "indices" : 11,
+                    "material" : 2
+                }
+            ]
+        },
+        {
+            "name" : "Cube.006",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 12,
+                        "NORMAL" : 13,
+                        "TEXCOORD_0" : 14
+                    },
+                    "indices" : 15,
+                    "material" : 3
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        },
+        {
+            "sampler" : 0,
+            "source" : 3
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Cerebro Textura Lateral 1",
+            "uri" : "Texturas/Cerebro%20Textura%20Lateral%201.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Cerebro Textura Lateral 2",
+            "uri" : "Texturas/Cerebro%20Textura%20Lateral%202.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Arbol",
+            "uri" : "Texturas/Arbol.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Tallo",
+            "uri" : "Texturas/Tallo.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 327680,
+            "max" : [
+                0.7790093421936035,
+                1.5007293224334717,
+                2.5168933868408203
+            ],
+            "min" : [
+                -1.0614163875579834,
+                -1.5339834690093994,
+                -1.5292502641677856
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 327680,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 327680,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5125,
+            "count" : 491520,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 327680,
+            "max" : [
+                0.7790093421936035,
+                1.5007293224334717,
+                2.5168933868408203
+            ],
+            "min" : [
+                -1.0614134073257446,
+                -1.5339834690093994,
+                -1.5292502641677856
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 327680,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 327680,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5125,
+            "count" : 491520,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 40960,
+            "max" : [
+                1.9932208061218262,
+                1.696483850479126,
+                1.6256147623062134
+            ],
+            "min" : [
+                -2.0055932998657227,
+                -1.6671282052993774,
+                -1.776748538017273
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5126,
+            "count" : 40960,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 10,
+            "componentType" : 5126,
+            "count" : 40960,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 11,
+            "componentType" : 5123,
+            "count" : 61440,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 12,
+            "componentType" : 5126,
+            "count" : 131072,
+            "max" : [
+                1.3077669143676758,
+                0.733812153339386,
+                2.526268243789673
+            ],
+            "min" : [
+                -1.4148223400115967,
+                -1.9055075645446777,
+                -12.019062042236328
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 13,
+            "componentType" : 5126,
+            "count" : 131072,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 14,
+            "componentType" : 5126,
+            "count" : 131072,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 15,
+            "componentType" : 5125,
+            "count" : 196608,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 3932160,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3932160,
+            "byteOffset" : 3932160
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2621440,
+            "byteOffset" : 7864320
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1966080,
+            "byteOffset" : 10485760
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3932160,
+            "byteOffset" : 12451840
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3932160,
+            "byteOffset" : 16384000
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2621440,
+            "byteOffset" : 20316160
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1966080,
+            "byteOffset" : 22937600
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 491520,
+            "byteOffset" : 24903680
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 491520,
+            "byteOffset" : 25395200
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 327680,
+            "byteOffset" : 25886720
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 122880,
+            "byteOffset" : 26214400
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1572864,
+            "byteOffset" : 26337280
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1572864,
+            "byteOffset" : 27910144
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1048576,
+            "byteOffset" : 29483008
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 786432,
+            "byteOffset" : 30531584
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 31318016,
+            "uri" : "encefaloBase.bin"
+        }
+    ]
+}

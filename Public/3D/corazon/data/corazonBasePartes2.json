@@ -1,0 +1,114 @@
+[
+   
+    {
+      "label": "Aurícula izquierda",
+      "Pos": {
+        "x": -0.20,
+        "y": 0.18,
+        "z": 0.28
+      },
+      "Color": "naranja"
+    },
+    {   
+        "label": "Surco coronario",
+        "Pos": {
+          "x": -0.18,
+          "y": 0.12,
+          "z": 0.3
+        },
+        "Color": "rosa"
+      },
+      {
+        "label": "Ventrículo izquierdo",
+        "Pos": {
+          "x": -0.20,
+          "y": -0.10,
+          "z": 0.28
+        },
+        "Color": "rojo"
+      },
+      {
+        "label": "Ventrículo derecho",
+        "Pos": {
+          "x": 0.10,
+          "y": -0.10,
+          "z": 0.28
+        },
+        "Color": "celeste"
+      },
+      {
+        "label": "Surco interventricular subsinusal",
+        "Pos": {
+          "x": -0.1,
+          "y": -0.18,
+          "z": 0.28
+        },
+        "Color": "rosa"
+      },
+      {
+        "label": "Aurícula derecha",
+        "Pos": {
+          "x": 0.12,
+          "y": 0.18,
+          "z": 0.28
+        },
+        "Color": "azul"
+      },
+      {
+        "label": "Aorta",
+        "Pos": {
+          "x": -0.39,
+          "y": 0.32,
+          "z": 0.1
+        },
+        "Color": "gris"
+      },
+        {
+        "label": "Arteria subclavia izquierda",
+        "Pos": {
+          "x": 0.1,
+          "y": 0.55,
+          "z": 0.0
+        },
+        "Color": "gris"
+      },
+      {
+        "label": "Tronco Braquiocefálico",
+        "Pos": {
+          "x": 0.35,
+          "y": 0.42,
+          "z": 0.1
+        },
+        "Color": "gris"
+      },
+      {
+        "label": "Carótida izquierda",
+        "Pos": {
+            "x": 0.52,
+            "y": 0.35,
+            "z": 0.05
+        },
+        "Color": "gris"
+      },
+      {
+        "label": "Carótida derecha",
+        "Pos": {
+          "x": 0.51,
+          "y": 0.28,
+          "z": 0.05
+        },
+        "Color": "gris"
+      },
+      {
+        "label": "Subclavia derecha",
+        "Pos": {
+            "x": 0.52,
+            "y": 0.42,
+            "z": 0.05
+        },
+        "Color": "gris"
+      }
+
+
+
+  ]

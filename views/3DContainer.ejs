@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Atlas Osteologia</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg col-12 text-center px-0 mt-3">
+            <div class="container-fluid" style="background-color: #0860A8;">
+                <h5 class="navBar-font col-7 text-white my-3">Atlas virtual: Anatomía canina</h5>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                    style="background-color: white;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active text-white " aria-current="page" href="/">Inicio</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-white " href="/huesos">Osteología</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-white " href="/organos">Órganos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="controlador3D" class="container-fluid">
+        <div><a href="/organos" class="text-white mt-4 ml-5">
+                <p>Volver</p>
+            </a></div>
+        <h1 class="text-white text-center my-4">{{title}}</h1>
+        <div class="text-center col-8 mx-auto my-4" >
+            <p class="text-white py-2" style="border: white 1px solid; border-radius:5px">Usa el cursor para mover el objeto 3D en 360 grados. <br>Da click en los botones numerados para observar el órgano con sus estructuras rotuladas.</p>
+        </div>
+        <div class="col-12 col-md-8 mx-auto ">
+            <div class="row my-3">
+                <div class="col-12 col-md-4 my-2  d-grid gap-2 ">
+                    <div v-if="organo=='encefalo'">
+                        <button type="button" class="btn btn-block btn-light p-2 text-center" style="font-size: 13px;"
+                            @click="_charge3D('encefalo','encefaloBase')">Modelo Base</button>
+                        <button type="button" class="btn btn-block btn-light p-2 text-center" style="font-size: 13px;"
+                            @click="_charge3D('encefalo','encefaloCorte')">Corte plano medio</button>
+                    </div>
+                    <div v-if="organo=='rinon'">
+                        <button type="button" class="btn btn-block btn-light p-2 text-center" style="font-size: 13px;"
+                            @click="_charge3D('rinon','rinonBase')">Corte plano medio</button>
+                    </div>
+                    <div v-if="organo=='corazon'">
+                        <button type="button" class="btn btn-block btn-light p-2 text-center" style="font-size: 13px;"
+                            @click="_charge3D('corazon','corazonBase')">Modelo Base</button>
+                            
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 my-2  d-grid gap-2 ">
+                    <div v-if="options">
+                        <div v-if="options=='encefaloBase'">
+                            <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
+                                style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes1')">1.Cerébro,
+                                cerebelo y tallo encefálico </button>
+                            <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
+                                style="font-size: 13px;"
+                                @click="_charge3D('encefalo','encefaloBasePartes2')">2.Circunvoluciones cerebrales
+                            </button>
+                            <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
+                                style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes4')">3.Surcos
+                                cerebrales </button>
+                            <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
+                                style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes3')">
+                                4.Estructuras del encéfalo</button>
+                            <button type="button" class="btn btn-block btn-light p-2 text-center mt-2"
+                                style="font-size: 13px;" @click="_charge3D('encefalo','encefaloBasePartes5')">
+                                5.Estructuras del encéfalo (vista ventral)</button>
+                        </div>
+                        <div v-if="options=='encefaloCorte'">
+                            <button type="button" class="btn btn-block btn-light p-2 text-center"
+                                style="font-size: 13px;"
+                                @click="_charge3D('encefalo','encefaloCortePartes1')">1.Estructuras encéfalo - corte plano
+                                medio</button>
+                        </div>
+                        <div v-if="options=='rinonBase'">
+                            <button type="button" class="btn btn-block btn-light p-2 text-center"
+                                style="font-size: 13px;" @click="_charge3D('rinon','rinonBasePartes1')">1.Estructuras
+                                externas del riñón</button>
+                            <button type="button" class="btn btn-block btn-light p-2 text-center"
+                                style="font-size: 13px;"
+                                @click="_charge3D('rinon','rinonBasePartes2')">2.Estructuras internas del
+                                riñón</button>
+                        </div>
+                        <div v-if="options=='corazonBase'">
+                            <button type="button" class="btn btn-block btn-light p-2 mx-2 text-center"
+                                style="font-size: 13px;" @click="_charge3D('corazon','corazonBasePartes1')">1.Corazón cara auricular: compartimentos, surcos y grandes vasos
+                            </button><button type="button" class="btn btn-block btn-light p-2 text-center"
+                            style="font-size: 13px;" @click="_charge3D('corazon','corazonBasePartes2')">2.Corazón cara atrial: compartimentos, surcos y grandes vasos
+                        </button>
+                        </div>
+                        <div v-if="options=='corazonCorte'">
+                            <button type="button" class="btn btn-block btn-light p-2 text-center"
+                                style="font-size: 13px;"
+                                @click="_charge3D('corazon','corazonCortePartes1')">Corazón (corte sagital): compartimentos y estructuras
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-white text-center mt-3">{{model}}</h2>
+            </div>
+
+
+        </div>
+        <div v-if="!leyenda">
+            <div class="col-12 container " id="imageContainer">
+                <div class="ratio" style="--bs-aspect-ratio: 80%;">
+                    <iframe style="width: 100%; height: 100%; " :src="source" id="contenedor" 
+                        style="border:none"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div v-if="leyenda" class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 d-flex justify-content-end">
+                    <div class="d-md-block d-none">
+                    <img :src="sourcePartes" style="height:30%; border: white 1px solid; border-radius:5px">
+                    </div>
+                    <div class="d-md-none d-block">
+                        <img :src="sourcePartes" style="width:100%; border: white 5px solid; border-radius:5px">
+                        </div>
+                </div>
+                <div class="col-12 col-md-9  " id="imageContainer">
+                    <div class="ratio" style="--bs-aspect-ratio: 80%;">
+                        <iframe style="width: 100%; height: 100%;" :src="source" id="contenedor"
+                            style="border:none"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="/control/controlContainer3D.js"></script>
+    <footer class="text-center text-lg-start" style="background-color: #333333;">
+        <div class="container-fluid p-4 col-lg-10 col-12 mx-auto">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0 mt-3">
+                    <p> <small class="text-white text-left"><strong>
+                                PROYECTO SENIOR CONV- DI – 2019- 026 -Docentes
+                            </strong> </small> </p>
+                    <ul>
+                        <li>
+                            <p><small class="text-white text-left"> Dr. César Guanoluisa Vargas MSc. -Investigador
+                                    principal- Director</small></p>
+                        </li>
+                        <li>
+                            <p><small class="text-white text-left"> Ing. Inf. César Morales Mejía MSc. -Investigador -
+                                    Asociado 1</small></p>
+                        </li>
+                        <li>
+                            <p><small class="text-white text-left"> MVZ Mg. María del Carmen Revelo Cueva MSc.
+                                    -Investigador- Asociado 2</small></p>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0 mt-3">
+                    <p> <small class="text-white text-left"><strong>
+                                PROYECTO SENIOR CONV- DI – 2019- 026 -Técnicos
+                            </strong> </small> </p>
+                    <ul>
+                        <li>
+                            <p><small class="text-white text-left"> Lcda. Ana Belén Toaquiza Salazar -Analista de
+                                    laboratorio</small></p>
+                        </li>
+                        <li>
+                            <p><small class="text-white text-left"> MVZ. Verónica Estefani Alvear Sandoval -Analista de
+                                    digitalización</small></p>
+                        </li>
+                        <li>
+                            <p><small class="text-white text-left"> Bryan Sebastian Velasco López -Analista de
+                                    programación y datos</small></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+<style>
+    body {
+        background-color: black;
+    }
+
+    .card {
+        background-color: white;
+    }
+
+    .btn:hover {
+        background-color: #0860A8 !important;
+        color: white;
+    }
+
+    .btn:active,
+    .btn:focus {
+        background-color: #0860A8 !important;
+        color: white;
+    }
+
+
+
+
+    .label {
+        color: #FFF;
+        font-family: sans-serif;
+        padding: 2px;
+        background: rgba(0, 0, 0, .6);
+    }
+</style>
+
+</html>

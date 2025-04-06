@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "6230cc396ac79a3949d247f5"
+  },
+  "nombre": "Encéfalo",
+  "slug": "encefalo",
+  "partes": [
+    "Lóbulos cerebrales - vista lateral",
+    "Circunvoluciones cerebrales - vista lateral",
+    "Surcos cerebrales - vista lateral",
+    "Surcos cerebrales - vista dorsal",
+    "Circunvoluciones cerebrales - vista dorsal",
+    "Estructuras  encéfalo - vista dorsal",
+    "Estructuras cerebelo – vista dorsal",
+    "Estructuras encéfalo – vista ventral",
+    "Estructuras rinencéfalo -  vista ventral ",
+    "Estructuras encéfalo (corte plano medio)",
+    "Estructuras tallo encefálico – vista dorsal",
+    "Estructuras tallo encefálico (diencéfalo y mesencéfalo)- vista dorsal",
+    "Estructuras tallo encefálico (epitálamo) – vista dorsal",
+    "Estructuras tallo encefálico – vista ventral"
+  ],
+  "animal": "canino"
+},{
+  "_id": {
+    "$oid": "627d6bdcbae2cfcf2e0ab351"
+  },
+  "animal": "canino",
+  "nombre": "Riñón",
+  "partes": [
+    "Estructuras externas del riñón ",
+    "Corte horizontal del riñón ",
+    "Estructuras renales –corte sagital medio del riñón"
+  ],
+  "slug": "rinon"
+},{
+  "_id": {
+    "$oid": "62e1b02ae7984048f442c2b5"
+  },
+  "animal": "canino",
+  "nombre": "Corazón",
+  "partes": [
+    "Compartimentos del corazón – cara auricular",
+    "Compartimentos del corazón – cara atrial",
+    "Surcos del corazón – cara auricular",
+    "Surcos del corazón – cara atrial",
+    "Corazón grandes vasos –  cara auricular",
+    "Corazón grandes vasos –  cara atrial",
+    "Compartimentos y estructuras internas del corazón – corte longitudinal",
+    "Compartimentos del corazón – corte longitudinal",
+    "Estructuras internas del corazón – corte longitudinal",
+    "Corazón compartimientos  –  corte transversal"
+  ],
+  "slug": "corazon"
+}]

@@ -1,0 +1,427 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.8.19",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "lateral",
+            "rotation" : [
+                0.5,
+                0.5,
+                -0.5,
+                0.4999999701976776
+            ],
+            "scale" : [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "translation" : [
+                0,
+                0,
+                -0.3499999940395355
+            ]
+        },
+        {
+            "name" : "superior",
+            "rotation" : [
+                0,
+                0.7071068286895752,
+                0,
+                0.7071068286895752
+            ],
+            "scale" : [
+                0.5299999713897705,
+                1,
+                0.5199999809265137
+            ]
+        },
+        {
+            "name" : "frontal",
+            "rotation" : [
+                0,
+                0.7071067690849304,
+                0.7071068286895752,
+                5.338507946817117e-08
+            ],
+            "scale" : [
+                -0.5,
+                0.5,
+                -0.5
+            ]
+        },
+        {
+            "name" : "LATERAL 2",
+            "rotation" : [
+                0.5000000596046448,
+                -0.5000000596046448,
+                0.5000000596046448,
+                0.5
+            ],
+            "scale" : [
+                -0.29740118980407715,
+                0.29740118980407715,
+                0.29740118980407715
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Encefalo 1",
+            "scale" : [
+                0.22736388444900513,
+                0.22736388444900513,
+                0.22736388444900513
+            ],
+            "translation" : [
+                0.22690370678901672,
+                0.07182563096284866,
+                -0.017956411466002464
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "Arbol",
+            "scale" : [
+                0.0776577964425087,
+                0.0776577964425087,
+                0.0776577964425087
+            ],
+            "translation" : [
+                0.07159585505723953,
+                -0.01453838124871254,
+                -0.28755897283554077
+            ]
+        },
+        {
+            "mesh" : 2,
+            "name" : "tallo",
+            "scale" : [
+                0.09010791778564453,
+                0.09010791778564453,
+                0.09010791778564453
+            ],
+            "translation" : [
+                0.08023615926504135,
+                -0.11018705368041992,
+                0.08978203684091568
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material.001",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5136363506317139
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Material.003",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Material.004",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Cube.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6,
+                        "COLOR_0" : 7
+                    },
+                    "indices" : 8,
+                    "material" : 1
+                }
+            ]
+        },
+        {
+            "name" : "Cube.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 9,
+                        "NORMAL" : 10,
+                        "TEXCOORD_0" : 11
+                    },
+                    "indices" : 12,
+                    "material" : 2
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Cerebro Textura Lateral 1 corte Lam_4",
+            "uri" : "Texturas/Cerebro%20Textura%20Lateral%201%20corte%20Lam_4.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Arbol Corte Lam_4",
+            "uri" : "Texturas/Arbol%20Corte%20Lam_4.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "Tallo Corte Lam_4",
+            "uri" : "Texturas/Tallo%20Corte%20Lam_4.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 327680,
+            "max" : [
+                0.7790093421936035,
+                1.5007293224334717,
+                2.5168933868408203
+            ],
+            "min" : [
+                -1.0346486568450928,
+                -1.5339834690093994,
+                -1.5292502641677856
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 327680,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 327680,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5125,
+            "count" : 491520,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 53248,
+            "max" : [
+                1.485560655593872,
+                2.04561710357666,
+                1.7193293571472168
+            ],
+            "min" : [
+                -1.1283056735992432,
+                -1.3839776515960693,
+                -2.025595188140869
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 53248,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 53248,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 53248,
+            "normalized" : true,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5123,
+            "count" : 79872,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5126,
+            "count" : 104425,
+            "max" : [
+                0.22101101279258728,
+                2.413780689239502,
+                2.4003067016601562
+            ],
+            "min" : [
+                -1.0266501903533936,
+                -1.5187652111053467,
+                -5.562581539154053
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 10,
+            "componentType" : 5126,
+            "count" : 104425,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 11,
+            "componentType" : 5126,
+            "count" : 104425,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 12,
+            "componentType" : 5125,
+            "count" : 156672,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 3932160,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3932160,
+            "byteOffset" : 3932160
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2621440,
+            "byteOffset" : 7864320
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1966080,
+            "byteOffset" : 10485760
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 638976,
+            "byteOffset" : 12451840
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 638976,
+            "byteOffset" : 13090816
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 425984,
+            "byteOffset" : 13729792
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 425984,
+            "byteOffset" : 14155776
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 159744,
+            "byteOffset" : 14581760
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1253100,
+            "byteOffset" : 14741504
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1253100,
+            "byteOffset" : 15994604
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 835400,
+            "byteOffset" : 17247704
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 626688,
+            "byteOffset" : 18083104
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 18709792,
+            "uri" : "encefaloCorte.bin"
+        }
+    ]
+}

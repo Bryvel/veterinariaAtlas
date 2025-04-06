@@ -1,0 +1,32 @@
+{
+  "name": "atlasv-0.0.1",
+  "version": "0.0.1",
+  "description": "Atlas Fullstack Version ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "Atlas"
+  ],
+  "author": "Bryan Velasco",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "image-map-resizer": "^1.0.10",
+    "jquery": "^3.4.1",
+    "jsdom": "^15.1.1",
+    "mongodb": "^3.3.2",
+    "mongoose": "^5.7.3",
+    "morgan": "^1.9.1",
+    "node": "^12.11.0",
+    "nodemon": "^2.0.15",
+    "nodeQuery": "0.0.9-1",
+    "path": "^0.12.7",
+    "typescript": "^4.7.4",
+    "vue": "^3.2.31"
+  }
+}

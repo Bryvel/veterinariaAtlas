@@ -1,0 +1,65 @@
+[
+  {
+    "label": "Lóbulo frontal",
+    "Pos": {
+      "x": 0.1,
+      "y": 0,
+      "z": 0.5
+    },
+    "Color": "amarillo"
+  },
+  {
+    "label": "Lóbulo parietal",
+    "Pos": {
+      "x": 0.3,
+      "y": 0.3,
+      "z": 0.05
+    },
+    "Color": "verde"
+  },
+  {
+    "label": "Lóbulo temporal",
+    "Pos": {
+      "x": 0.32,
+      "y": 0,
+      "z": 0.05
+    },
+    "Color": "celeste"
+  },
+  {
+    "label": "Lóbulo occipital",
+    "Pos": {
+      "x": 0.28,
+      "y": 0.25,
+      "z": -0.3
+    },
+    "Color": "fuxia"
+  },
+  {
+    "label": "Cerebelo",
+    "Pos": {
+      "x": 0,
+      "y": -0.04,
+      "z": -0.35
+    },
+    "Color": "verde"
+  },
+  {
+    "label": "Tallo encefálico",
+    "Pos": {
+      "x": 0,
+      "y": -0.05,
+      "z": -0.6
+    },
+    "Color": "amarillo"
+  },
+  {
+    "label": "Bulbo olfatorio",
+    "Pos": {
+      "x": 0.1,
+      "y": -0.25,
+      "z": 0.52
+    },
+    "Color": "rojo"
+  }
+]
